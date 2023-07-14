@@ -1,0 +1,21 @@
+.upload-box{
+    font-size: 13px;
+    background: white;
+    border-radius: 50px;
+    width: 200px;
+    box-shadow: 1px 1px 5px black;
+    margin-right:10px ;
+  }
+  
+  ::-webkit-file-upload-button{
+    color:white;
+    background: green;
+    padding: 12px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 1px 1px 5px black;
+  }
+
+  ::-webkit-file-upload-button:hover{
+    background: #438a5e;
+  }

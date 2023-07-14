@@ -1,0 +1,1485 @@
+INFO 2023-05-04 03:59:01,880 Watching for file changes with StatReloader
+INFO 2023-05-04 03:59:31,570 "GET /loginandregister/logout/ HTTP/1.1" 302 0
+INFO 2023-05-04 03:59:31,580 "GET /loginandregister/login/ HTTP/1.1" 200 2375
+INFO 2023-05-04 03:59:32,710 "GET /loginandregister/login/ HTTP/1.1" 200 2375
+ERROR 2023-05-04 04:06:28,671 Internal Server Error: /student/home/
+Traceback (most recent call last):
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\student\request_views.py", line 35, in displayhomestudent
+    return db_connect_views.displayhomestudent(request)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\student\db_connect_views.py", line 218, in displayhomestudent
+    alluser = Alluser.objects.get(user=user)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 424, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1393, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1412, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1320, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1149, in check_related_objects
+    for v in value:
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\utils\functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+ERROR 2023-05-04 04:06:28,674 "GET /student/home/ HTTP/1.1" 500 122143
+ERROR 2023-05-04 04:06:29,166 Internal Server Error: /student/home/
+Traceback (most recent call last):
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\student\request_views.py", line 35, in displayhomestudent
+    return db_connect_views.displayhomestudent(request)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\student\db_connect_views.py", line 218, in displayhomestudent
+    alluser = Alluser.objects.get(user=user)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 424, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1393, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1412, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1320, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1149, in check_related_objects
+    for v in value:
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\utils\functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+ERROR 2023-05-04 04:06:29,167 "GET /student/home/ HTTP/1.1" 500 121245
+INFO 2023-05-04 04:08:18,106 D:\javascript and nodejs tuts\webdev\NaacDataAggregator\NaacDataAggregator\settings.py changed, reloading.
+INFO 2023-05-04 04:08:52,622 Watching for file changes with StatReloader
+INFO 2023-05-04 10:51:27,631 Watching for file changes with StatReloader
+INFO 2023-05-04 10:51:46,555 "GET /loginandregister/login/ HTTP/1.1" 200 2375
+WARNING 2023-05-04 10:51:47,238 Not Found: /favicon.ico
+WARNING 2023-05-04 10:51:47,239 "GET /favicon.ico HTTP/1.1" 404 2791
+INFO 2023-05-04 10:51:47,602 "GET /loginandregister/login/ HTTP/1.1" 200 2375
+INFO 2023-05-04 10:52:01,534 "POST /loginandregister/login/validateuser/ HTTP/1.1" 302 0
+INFO 2023-05-04 10:52:01,783 "GET /teacher/home/ HTTP/1.1" 200 21122
+WARNING 2023-05-04 10:52:02,029 "GET /static/javascript/institute/jquery.js HTTP/1.1" 404 1849
+WARNING 2023-05-04 10:52:02,029 "GET /static/javascript/institute/popper.js HTTP/1.1" 404 1849
+INFO 2023-05-04 10:52:02,227 "GET /teacher/home/ HTTP/1.1" 200 21122
+INFO 2023-05-04 11:58:05,016 D:\javascript and nodejs tuts\webdev\NaacDataAggregator\institute\db_connect_views.py changed, reloading.
+INFO 2023-05-04 11:58:06,053 Watching for file changes with StatReloader
+INFO 2023-05-04 11:59:54,399 "GET /loginandregister/login/ HTTP/1.1" 200 2375
+INFO 2023-05-04 11:59:55,512 "GET /loginandregister/login/ HTTP/1.1" 200 2375
+INFO 2023-05-04 12:00:05,676 "POST /loginandregister/login/validateuser/ HTTP/1.1" 302 0
+INFO 2023-05-04 12:00:06,111 "GET /institute/admin_home/ HTTP/1.1" 200 95640
+INFO 2023-05-04 12:00:06,138 "GET /static/css/student/homepagestyles.css HTTP/1.1" 304 0
+INFO 2023-05-04 12:00:06,159 "GET /static/css/institute/styles.css HTTP/1.1" 304 0
+WARNING 2023-05-04 12:00:06,171 "GET /static/javascript/institute/jquery.js HTTP/1.1" 404 1849
+WARNING 2023-05-04 12:00:06,174 "GET /static/javascript/institute/popper.js HTTP/1.1" 404 1849
+INFO 2023-05-04 12:00:06,777 "GET /institute/admin_home/ HTTP/1.1" 200 95640
+INFO 2023-05-04 12:00:14,419 "GET /loginandregister/logout/ HTTP/1.1" 302 0
+INFO 2023-05-04 12:00:14,425 "GET /loginandregister/login/ HTTP/1.1" 200 2375
+INFO 2023-05-04 12:00:14,474 "GET /loginandregister/login/ HTTP/1.1" 200 2375
+INFO 2023-05-04 12:00:23,854 "POST /loginandregister/login/validateuser/ HTTP/1.1" 302 0
+INFO 2023-05-04 12:00:24,071 "GET /institute/account_home/ HTTP/1.1" 200 27501
+WARNING 2023-05-04 12:00:24,110 "GET /static/javascript/institute/jquery.js HTTP/1.1" 404 1849
+WARNING 2023-05-04 12:00:24,413 "GET /static/javascript/institute/popper.js HTTP/1.1" 404 1849
+INFO 2023-05-04 12:00:24,597 "GET /institute/account_home/ HTTP/1.1" 200 27501
+INFO 2023-05-04 12:00:46,426 "POST /loginandregister/login/validateuser/ HTTP/1.1" 200 13
+INFO 2023-05-04 12:00:46,455 "GET /loginandregister/login/validateuser/ HTTP/1.1" 302 0
+INFO 2023-05-04 12:00:46,462 "GET /loginandregister/login/ HTTP/1.1" 200 2375
+INFO 2023-05-04 12:00:53,505 "POST /loginandregister/login/validateuser/ HTTP/1.1" 302 0
+INFO 2023-05-04 12:00:53,635 "GET /institute/library_home/ HTTP/1.1" 200 19207
+WARNING 2023-05-04 12:00:53,669 "GET /static/javascript/institute/jquery.js HTTP/1.1" 404 1849
+WARNING 2023-05-04 12:00:53,670 "GET /static/javascript/institute/popper.js HTTP/1.1" 404 1849
+INFO 2023-05-04 12:00:53,827 "GET /institute/library_home/ HTTP/1.1" 200 19207
+INFO 2023-05-04 12:01:11,022 "GET /admin/ HTTP/1.1" 302 0
+INFO 2023-05-04 12:01:11,235 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2369
+INFO 2023-05-04 12:01:11,504 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2369
+INFO 2023-05-04 12:01:19,522 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2023-05-04 12:01:19,696 "GET /admin/ HTTP/1.1" 200 25256
+INFO 2023-05-04 12:01:19,882 "GET /admin/ HTTP/1.1" 200 25256
+INFO 2023-05-04 12:01:47,223 "GET /admin/loginandregister/alluser/ HTTP/1.1" 200 37996
+INFO 2023-05-04 12:01:47,339 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2023-05-04 12:01:47,828 "GET /admin/loginandregister/alluser/ HTTP/1.1" 200 37996
+INFO 2023-05-04 12:02:59,174 "GET /admin/auth/user/ HTTP/1.1" 200 56673
+INFO 2023-05-04 12:02:59,279 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2023-05-04 12:02:59,845 "GET /admin/auth/user/ HTTP/1.1" 200 56673
+INFO 2023-05-04 12:03:44,060 "GET /admin/loginandregister/alluser/ HTTP/1.1" 200 37996
+INFO 2023-05-04 12:03:44,156 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2023-05-04 12:03:44,596 "GET /admin/loginandregister/alluser/ HTTP/1.1" 200 37996
+INFO 2023-05-04 12:04:04,863 "GET /admin/auth/user/ HTTP/1.1" 200 56673
+INFO 2023-05-04 12:04:04,964 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2023-05-04 12:04:05,400 "GET /admin/auth/user/ HTTP/1.1" 200 56673
+INFO 2023-05-04 12:04:07,660 "GET /admin/auth/user/add/ HTTP/1.1" 200 20432
+INFO 2023-05-04 12:04:07,768 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2023-05-04 12:04:07,947 "GET /admin/auth/user/add/ HTTP/1.1" 200 20432
+INFO 2023-05-04 12:04:25,954 "POST /admin/auth/user/add/ HTTP/1.1" 302 0
+INFO 2023-05-04 12:04:26,265 "GET /admin/auth/user/91/change/ HTTP/1.1" 200 42618
+INFO 2023-05-04 12:04:26,361 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2023-05-04 12:04:26,642 "GET /admin/auth/user/91/change/ HTTP/1.1" 200 42394
+INFO 2023-05-04 12:04:44,349 "POST /admin/auth/user/91/change/ HTTP/1.1" 302 0
+INFO 2023-05-04 12:04:44,676 "GET /admin/auth/user/ HTTP/1.1" 200 57286
+INFO 2023-05-04 12:04:44,777 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2023-05-04 12:04:45,269 "GET /admin/auth/user/ HTTP/1.1" 200 57089
+INFO 2023-05-04 12:04:50,686 "GET /admin/loginandregister/alluser/ HTTP/1.1" 200 37996
+INFO 2023-05-04 12:04:50,785 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2023-05-04 12:04:51,252 "GET /admin/loginandregister/alluser/ HTTP/1.1" 200 37996
+INFO 2023-05-04 12:05:10,654 "GET /admin/loginandregister/alluser/add/ HTTP/1.1" 200 23892
+INFO 2023-05-04 12:05:10,755 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2023-05-04 12:05:10,940 "GET /admin/loginandregister/alluser/add/ HTTP/1.1" 200 23892
+INFO 2023-05-04 12:06:21,012 "POST /admin/loginandregister/alluser/add/ HTTP/1.1" 302 0
+INFO 2023-05-04 12:06:21,431 "GET /admin/loginandregister/alluser/ HTTP/1.1" 200 38462
+INFO 2023-05-04 12:06:21,527 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2023-05-04 12:06:22,106 "GET /admin/loginandregister/alluser/ HTTP/1.1" 200 38233
+INFO 2023-05-04 12:06:34,796 "POST /loginandregister/login/validateuser/ HTTP/1.1" 302 0
+INFO 2023-05-04 12:06:34,877 "GET /institute/naac_cod_home/ HTTP/1.1" 200 3841
+WARNING 2023-05-04 12:06:34,977 "GET /static/javascript/institute/jquery.js HTTP/1.1" 404 1849
+WARNING 2023-05-04 12:06:35,288 "GET /static/javascript/institute/popper.js HTTP/1.1" 404 1849
+INFO 2023-05-04 12:06:35,389 "GET /institute/naac_cod_home/ HTTP/1.1" 200 3841
+INFO 2023-05-04 12:06:51,925 "GET /institute/criteria_page/ HTTP/1.1" 200 13472
+WARNING 2023-05-04 12:06:51,955 Not Found: /institute/criteria_page/css/styles.css
+WARNING 2023-05-04 12:06:51,956 "GET /institute/criteria_page/css/styles.css HTTP/1.1" 404 13631
+INFO 2023-05-04 12:06:52,015 "GET /institute/criteria_page/ HTTP/1.1" 200 13472
+INFO 2023-05-04 13:46:52,113 "GET /institute/home HTTP/1.1" 301 0
+INFO 2023-05-04 13:46:52,133 "GET /institute/home/ HTTP/1.1" 200 12738
+INFO 2023-05-04 13:46:52,392 "GET /static/css/institute/homepage.css HTTP/1.1" 200 7883
+INFO 2023-05-04 13:46:52,635 "GET /static/javascript/institute/homepage.js HTTP/1.1" 200 1156
+INFO 2023-05-04 13:46:52,643 "GET /static/images/institute/shape.png HTTP/1.1" 200 31666
+INFO 2023-05-04 13:46:52,668 "GET /static/images/institute/logo.png HTTP/1.1" 200 8635
+INFO 2023-05-04 13:46:52,680 "GET /static/images/institute/person.svg HTTP/1.1" 200 16729
+INFO 2023-05-04 13:46:53,278 "GET /institute/home/ HTTP/1.1" 200 12738
+INFO 2023-05-04 13:48:44,042 "GET /institute/home/ HTTP/1.1" 200 12654
+INFO 2023-05-04 13:48:44,330 "GET /institute/home/ HTTP/1.1" 200 12654
+INFO 2023-05-04 13:50:43,993 "GET /institute/home/ HTTP/1.1" 200 12626
+INFO 2023-05-04 13:50:44,294 "GET /institute/home/ HTTP/1.1" 200 12626
+INFO 2023-05-04 13:57:23,418 "GET /institute/home/ HTTP/1.1" 200 12615
+INFO 2023-05-04 13:57:23,721 "GET /static/images/institute/aman_photo.jpg HTTP/1.1" 200 150541
+INFO 2023-05-04 13:57:24,258 "GET /institute/home/ HTTP/1.1" 200 12615
+INFO 2023-05-04 14:05:31,351 "GET /institute/home/ HTTP/1.1" 200 12598
+INFO 2023-05-04 14:05:31,721 "GET /static/images/institute/ayushk_photo.jpeg HTTP/1.1" 200 16269
+INFO 2023-05-04 14:05:31,741 "GET /static/images/institute/arpit_photo.jpeg HTTP/1.1" 200 6517
+INFO 2023-05-04 14:05:32,376 "GET /institute/home/ HTTP/1.1" 200 12598
+INFO 2023-05-04 14:07:51,571 "GET /institute/home/ HTTP/1.1" 200 12590
+INFO 2023-05-04 14:07:51,895 "GET /static/images/institute/ayushk_photo.jpeg HTTP/1.1" 304 0
+INFO 2023-05-04 14:07:51,900 "GET /static/images/institute/arpit_photo.jpeg HTTP/1.1" 304 0
+INFO 2023-05-04 14:07:51,921 "GET /static/images/institute/kartik_photo.jpeg HTTP/1.1" 200 95478
+INFO 2023-05-04 14:07:52,056 "GET /institute/home/ HTTP/1.1" 200 12590
+INFO 2023-05-04 14:09:54,298 "GET /institute/home/ HTTP/1.1" 200 12582
+INFO 2023-05-04 14:09:54,468 "GET /static/images/institute/ayushk_photo.jpeg HTTP/1.1" 304 0
+INFO 2023-05-04 14:09:54,492 "GET /static/images/institute/ayushj_photo.jpeg HTTP/1.1" 200 351043
+INFO 2023-05-04 14:09:54,498 "GET /static/images/institute/arpit_photo.jpeg HTTP/1.1" 304 0
+INFO 2023-05-04 14:09:54,502 "GET /static/images/institute/kartik_photo.jpeg HTTP/1.1" 304 0
+INFO 2023-05-04 14:09:54,645 "GET /institute/home/ HTTP/1.1" 200 12582
+INFO 2023-05-04 14:10:46,721 "GET /institute/home/ HTTP/1.1" 200 12582
+INFO 2023-05-04 14:10:46,756 "GET /static/images/institute/ayushk_photo.jpeg HTTP/1.1" 304 0
+INFO 2023-05-04 14:10:46,758 "GET /static/images/institute/ayushj_photo.jpeg HTTP/1.1" 304 0
+INFO 2023-05-04 14:10:46,763 "GET /static/images/institute/arpit_photo.jpeg HTTP/1.1" 304 0
+INFO 2023-05-04 14:10:46,768 "GET /static/images/institute/kartik_photo.jpeg HTTP/1.1" 304 0
+INFO 2023-05-04 14:10:46,796 "GET /institute/home/ HTTP/1.1" 200 12582
+INFO 2023-05-04 14:11:19,713 "GET /institute/home/ HTTP/1.1" 200 12582
+INFO 2023-05-04 14:11:20,356 "GET /static/images/institute/ayushj_photo.jpeg HTTP/1.1" 304 0
+INFO 2023-05-04 14:11:20,357 "GET /static/images/institute/kartik_photo.jpeg HTTP/1.1" 304 0
+INFO 2023-05-04 14:11:20,409 "GET /institute/home/ HTTP/1.1" 200 12582
+INFO 2023-05-04 14:11:45,244 "GET /institute/home/ HTTP/1.1" 200 12582
+INFO 2023-05-04 14:11:45,263 "GET /static/images/institute/ayushk_photo.jpeg HTTP/1.1" 304 0
+INFO 2023-05-04 14:11:45,265 "GET /static/images/institute/ayushj_photo.jpeg HTTP/1.1" 304 0
+INFO 2023-05-04 14:11:45,285 "GET /static/images/institute/arpit_photo.jpeg HTTP/1.1" 304 0
+INFO 2023-05-04 14:11:45,617 "GET /institute/home/ HTTP/1.1" 200 12582
+INFO 2023-05-04 15:35:50,753 Watching for file changes with StatReloader
+INFO 2023-05-04 15:36:09,191 "GET /admin/loginandregister/alluser/ HTTP/1.1" 302 0
+INFO 2023-05-04 15:36:09,687 "GET /admin/login/?next=/admin/loginandregister/alluser/ HTTP/1.1" 200 2419
+INFO 2023-05-04 15:36:09,727 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2271
+INFO 2023-05-04 15:36:09,728 "GET /static/admin/css/base.css HTTP/1.1" 200 19513
+INFO 2023-05-04 15:36:09,746 "GET /static/admin/css/login.css HTTP/1.1" 200 939
+INFO 2023-05-04 15:36:09,748 "GET /static/admin/css/responsive.css HTTP/1.1" 200 18545
+INFO 2023-05-04 15:36:09,770 "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+INFO 2023-05-04 15:36:09,787 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 1360
+INFO 2023-05-04 15:36:10,007 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+INFO 2023-05-04 15:36:10,008 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+INFO 2023-05-04 15:36:10,058 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+WARNING 2023-05-04 15:36:10,327 Not Found: /favicon.ico
+WARNING 2023-05-04 15:36:10,328 "GET /favicon.ico HTTP/1.1" 404 2791
+INFO 2023-05-04 15:36:10,726 "GET /admin/login/?next=/admin/loginandregister/alluser/ HTTP/1.1" 200 2419
+INFO 2023-05-04 15:36:11,803 "GET /institute/home/ HTTP/1.1" 200 12582
+INFO 2023-05-04 15:36:11,899 "GET /institute/naac_cod_home/ HTTP/1.1" 200 3841
+ERROR 2023-05-04 15:36:12,083 Internal Server Error: /teacher/home/
+Traceback (most recent call last):
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\teacher\request_views.py", line 42, in displayhome
+    return db_connect_views.displayhome(request)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\teacher\db_connect_views.py", line 277, in displayhome
+    teacher= Teacher.objects.get(teacher=alluser)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+teacher.models.Teacher.DoesNotExist: Teacher matching query does not exist.
+ERROR 2023-05-04 15:36:12,088 "GET /teacher/home/ HTTP/1.1" 500 79025
+ERROR 2023-05-04 15:36:12,300 Internal Server Error: /teacher/home/
+Traceback (most recent call last):
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\teacher\request_views.py", line 42, in displayhome
+    return db_connect_views.displayhome(request)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\teacher\db_connect_views.py", line 277, in displayhome
+    teacher= Teacher.objects.get(teacher=alluser)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+teacher.models.Teacher.DoesNotExist: Teacher matching query does not exist.
+ERROR 2023-05-04 15:36:12,301 "GET /teacher/home/ HTTP/1.1" 500 77953
+INFO 2023-05-04 15:36:13,892 "GET /static/css/student/homepagestyles.css HTTP/1.1" 200 7915
+INFO 2023-05-04 15:36:13,925 "GET /static/css/institute/styles.css HTTP/1.1" 200 426
+INFO 2023-05-04 15:36:14,672 "GET /static/css/institute/homepage.css HTTP/1.1" 200 7883
+INFO 2023-05-04 15:36:14,705 "GET /static/css/institute/bootstrap.css HTTP/1.1" 200 155845
+WARNING 2023-05-04 15:36:15,119 "GET /static/javascript/institute/jquery.js HTTP/1.1" 404 1849
+WARNING 2023-05-04 15:36:15,128 "GET /static/javascript/institute/popper.js HTTP/1.1" 404 1849
+INFO 2023-05-04 15:36:15,175 "GET /static/javascript/institute/bootstrap.js HTTP/1.1" 200 60089
+INFO 2023-05-04 15:36:16,344 "GET /institute/naac_cod_home/ HTTP/1.1" 200 3841
+INFO 2023-05-04 15:36:16,513 "GET /static/javascript/institute/homepage.js HTTP/1.1" 200 1156
+INFO 2023-05-04 15:36:16,516 "GET /static/images/institute/shape.png HTTP/1.1" 200 31666
+INFO 2023-05-04 15:36:16,544 "GET /static/images/institute/person.svg HTTP/1.1" 200 16729
+INFO 2023-05-04 15:36:16,559 "GET /static/images/institute/logo.png HTTP/1.1" 200 8635
+INFO 2023-05-04 15:36:16,881 "GET /institute/home/ HTTP/1.1" 200 12582
+INFO 2023-05-04 15:36:18,062 "GET /static/images/institute/ayushk_photo.jpeg HTTP/1.1" 200 16269
+INFO 2023-05-04 15:36:18,075 "GET /static/images/institute/aman_photo.jpg HTTP/1.1" 200 150541
+INFO 2023-05-04 15:36:18,092 "GET /static/images/institute/ayushj_photo.jpeg HTTP/1.1" 200 351043
+INFO 2023-05-04 15:36:19,622 "GET /static/images/institute/arpit_photo.jpeg HTTP/1.1" 200 6517
+INFO 2023-05-04 15:36:19,648 "GET /static/images/institute/kartik_photo.jpeg HTTP/1.1" 200 95478
+INFO 2023-05-04 15:36:25,295 "POST /admin/login/?next=/admin/loginandregister/alluser/ HTTP/1.1" 302 0
+INFO 2023-05-04 15:36:26,152 "GET /admin/loginandregister/alluser/ HTTP/1.1" 200 38233
+INFO 2023-05-04 15:36:26,227 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6874
+INFO 2023-05-04 15:36:26,289 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2023-05-04 15:36:26,309 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2023-05-04 15:36:26,327 "GET /static/admin/js/core.js HTTP/1.1" 200 5698
+INFO 2023-05-04 15:36:26,350 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 5984
+INFO 2023-05-04 15:36:26,367 "GET /static/admin/js/actions.js HTTP/1.1" 200 7664
+INFO 2023-05-04 15:36:26,384 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+INFO 2023-05-04 15:36:26,396 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+INFO 2023-05-04 15:36:26,400 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2023-05-04 15:36:26,500 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+INFO 2023-05-04 15:36:26,544 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2023-05-04 15:36:26,549 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2023-05-04 15:36:27,283 "GET /admin/loginandregister/alluser/ HTTP/1.1" 200 38233
+INFO 2023-05-04 15:38:31,047 "POST /admin/loginandregister/alluser/ HTTP/1.1" 200 29930
+INFO 2023-05-04 15:38:31,097 "GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+INFO 2023-05-04 15:38:31,710 "GET /admin/loginandregister/alluser/ HTTP/1.1" 200 38233
+INFO 2023-05-04 15:38:36,673 "POST /admin/loginandregister/alluser/ HTTP/1.1" 302 0
+INFO 2023-05-04 15:38:36,975 "GET /admin/loginandregister/alluser/ HTTP/1.1" 200 28586
+INFO 2023-05-04 15:38:37,074 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2023-05-04 15:38:37,108 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2023-05-04 15:38:37,414 "GET /admin/loginandregister/alluser/ HTTP/1.1" 200 28447
+INFO 2023-05-04 15:39:33,942 "POST /admin/loginandregister/alluser/ HTTP/1.1" 200 18287
+INFO 2023-05-04 15:39:34,296 "GET /admin/loginandregister/alluser/ HTTP/1.1" 200 28447
+INFO 2023-05-04 15:39:35,433 "POST /admin/loginandregister/alluser/ HTTP/1.1" 302 0
+INFO 2023-05-04 15:39:35,718 "GET /admin/loginandregister/alluser/ HTTP/1.1" 200 28351
+INFO 2023-05-04 15:39:35,813 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2023-05-04 15:39:36,126 "GET /admin/loginandregister/alluser/ HTTP/1.1" 200 28214
+INFO 2023-05-04 15:42:19,059 "GET /loginandregister/login/ HTTP/1.1" 200 2375
+INFO 2023-05-04 15:42:19,176 "GET /static/css/loginandregister/loginstyles.css HTTP/1.1" 200 6490
+INFO 2023-05-04 15:42:19,199 "GET /static/javascript/loginandregister/login.js HTTP/1.1" 200 367
+INFO 2023-05-04 15:42:19,230 "GET /static/images/loginandregister/log.svg HTTP/1.1" 200 34525
+INFO 2023-05-04 15:42:19,262 "GET /static/images/loginandregister/register.svg HTTP/1.1" 200 26911
+INFO 2023-05-04 15:42:19,759 "GET /loginandregister/login/ HTTP/1.1" 200 2375
+INFO 2023-05-04 15:43:16,122 "POST /loginandregister/login/validateuser/ HTTP/1.1" 302 0
+INFO 2023-05-04 15:43:16,313 "GET /institute/admin_home/ HTTP/1.1" 200 40966
+WARNING 2023-05-04 15:43:16,351 "GET /static/javascript/institute/jquery.js HTTP/1.1" 404 1849
+WARNING 2023-05-04 15:43:16,658 "GET /static/javascript/institute/popper.js HTTP/1.1" 404 1849
+INFO 2023-05-04 15:43:16,869 "GET /institute/admin_home/ HTTP/1.1" 200 40966
+ERROR 2023-05-04 15:43:51,277 Internal Server Error: /student/Student_bulk_upload/
+Traceback (most recent call last):
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "auth_user_username_key"
+DETAIL:  Key (username)=(0801CS191102) already exists.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\student\request_views.py", line 163, in Student_bulk_upload
+    return db_connect_views.Student_bulk_upload(request)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\student\db_connect_views.py", line 607, in Student_bulk_upload
+    user=User.objects.create_user(username=row[0].value, password=row[1].value, first_name=row[2].value, last_name=row[3].value, email=row[4].value)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\contrib\auth\models.py", line 152, in create_user
+    return self._create_user(username, email, password, **extra_fields)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\contrib\auth\models.py", line 146, in _create_user
+    user.save(using=self._db)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\contrib\auth\base_user.py", line 67, in save
+    super().save(*args, **kwargs)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\base.py", line 763, in save_base
+    updated = self._save_table(
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\base.py", line 868, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\base.py", line 906, in _do_insert
+    return manager._insert(
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\compiler.py", line 1416, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: duplicate key value violates unique constraint "auth_user_username_key"
+DETAIL:  Key (username)=(0801CS191102) already exists.
+
+ERROR 2023-05-04 15:43:51,283 "POST /student/Student_bulk_upload/ HTTP/1.1" 500 171105
+ERROR 2023-05-04 15:43:51,685 Internal Server Error: /student/Student_bulk_upload/
+Traceback (most recent call last):
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\utils\datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'file'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\student\request_views.py", line 163, in Student_bulk_upload
+    return db_connect_views.Student_bulk_upload(request)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\student\db_connect_views.py", line 600, in Student_bulk_upload
+    excelfile= request.FILES['file']
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\utils\datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'file'
+ERROR 2023-05-04 15:43:51,686 "GET /student/Student_bulk_upload/ HTTP/1.1" 500 75829
+INFO 2023-05-04 15:44:53,144 "GET /institute/admin_home/ HTTP/1.1" 200 40966
+WARNING 2023-05-04 15:44:53,195 "GET /static/javascript/institute/jquery.js HTTP/1.1" 404 1849
+WARNING 2023-05-04 15:44:53,495 "GET /static/javascript/institute/popper.js HTTP/1.1" 404 1849
+INFO 2023-05-04 15:44:53,687 "GET /institute/admin_home/ HTTP/1.1" 200 40966
+INFO 2023-05-04 15:47:58,938 "GET /institute/admin_home/ HTTP/1.1" 200 40966
+WARNING 2023-05-04 15:47:58,968 "GET /static/javascript/institute/jquery.js HTTP/1.1" 404 1849
+WARNING 2023-05-04 15:47:59,013 "GET /static/javascript/institute/popper.js HTTP/1.1" 404 1849
+INFO 2023-05-04 15:47:59,323 "GET /institute/admin_home/ HTTP/1.1" 200 40966
+ERROR 2023-05-04 15:48:12,432 Internal Server Error: /student/Student_bulk_upload/
+Traceback (most recent call last):
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "auth_user_username_key"
+DETAIL:  Key (username)=(0801CS191102) already exists.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\student\request_views.py", line 163, in Student_bulk_upload
+    return db_connect_views.Student_bulk_upload(request)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\student\db_connect_views.py", line 607, in Student_bulk_upload
+    user=User.objects.create_user(username=row[0].value, password=row[1].value, first_name=row[2].value, last_name=row[3].value, email=row[4].value)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\contrib\auth\models.py", line 152, in create_user
+    return self._create_user(username, email, password, **extra_fields)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\contrib\auth\models.py", line 146, in _create_user
+    user.save(using=self._db)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\contrib\auth\base_user.py", line 67, in save
+    super().save(*args, **kwargs)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\base.py", line 763, in save_base
+    updated = self._save_table(
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\base.py", line 868, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\base.py", line 906, in _do_insert
+    return manager._insert(
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\compiler.py", line 1416, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: duplicate key value violates unique constraint "auth_user_username_key"
+DETAIL:  Key (username)=(0801CS191102) already exists.
+
+ERROR 2023-05-04 15:48:12,434 "POST /student/Student_bulk_upload/ HTTP/1.1" 500 171098
+ERROR 2023-05-04 15:48:12,821 Internal Server Error: /student/Student_bulk_upload/
+Traceback (most recent call last):
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\utils\datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'file'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\student\request_views.py", line 163, in Student_bulk_upload
+    return db_connect_views.Student_bulk_upload(request)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\student\db_connect_views.py", line 600, in Student_bulk_upload
+    excelfile= request.FILES['file']
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\utils\datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'file'
+ERROR 2023-05-04 15:48:12,822 "GET /student/Student_bulk_upload/ HTTP/1.1" 500 75829
+INFO 2023-05-04 15:48:32,629 "GET /institute/admin_home/ HTTP/1.1" 200 40966
+INFO 2023-05-04 15:49:03,308 "GET /admin/auth/user/ HTTP/1.1" 302 0
+INFO 2023-05-04 15:49:03,416 "GET /admin/login/?next=/admin/auth/user/ HTTP/1.1" 200 2389
+INFO 2023-05-04 15:49:03,590 "GET /admin/login/?next=/admin/auth/user/ HTTP/1.1" 200 2389
+INFO 2023-05-04 15:49:12,403 "POST /admin/login/?next=/admin/auth/user/ HTTP/1.1" 302 0
+INFO 2023-05-04 15:49:12,802 "GET /admin/auth/user/ HTTP/1.1" 200 57089
+INFO 2023-05-04 15:49:12,902 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2023-05-04 15:49:12,917 "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2023-05-04 15:49:12,927 "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+INFO 2023-05-04 15:49:12,975 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO 2023-05-04 15:49:13,414 "GET /admin/auth/user/ HTTP/1.1" 200 57089
+ERROR 2023-05-04 15:49:26,999 Internal Server Error: /institute/admin_home/
+Traceback (most recent call last):
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\institute\request_views.py", line 129, in display_admin_home
+    return db_connect_views.display_admin_home(request)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\institute\db_connect_views.py", line 684, in display_admin_home
+    alluser = Alluser.objects.get(user=user)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+loginandregister.models.Alluser.DoesNotExist: Alluser matching query does not exist.
+ERROR 2023-05-04 15:49:27,001 "GET /institute/admin_home/ HTTP/1.1" 500 79079
+ERROR 2023-05-04 15:49:27,412 Internal Server Error: /institute/admin_home/
+Traceback (most recent call last):
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\institute\request_views.py", line 129, in display_admin_home
+    return db_connect_views.display_admin_home(request)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\institute\db_connect_views.py", line 684, in display_admin_home
+    alluser = Alluser.objects.get(user=user)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+loginandregister.models.Alluser.DoesNotExist: Alluser matching query does not exist.
+ERROR 2023-05-04 15:49:27,414 "GET /institute/admin_home/ HTTP/1.1" 500 78181
+INFO 2023-05-04 15:49:54,480 "POST /admin/auth/user/ HTTP/1.1" 200 18087
+INFO 2023-05-04 15:49:54,889 "GET /admin/auth/user/ HTTP/1.1" 200 57089
+INFO 2023-05-04 15:49:56,096 "POST /admin/auth/user/ HTTP/1.1" 302 0
+INFO 2023-05-04 15:49:56,436 "GET /admin/auth/user/ HTTP/1.1" 200 56805
+INFO 2023-05-04 15:49:56,651 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2023-05-04 15:49:57,091 "GET /admin/auth/user/ HTTP/1.1" 200 56671
+INFO 2023-05-04 15:50:59,963 "GET /institute/admin_home HTTP/1.1" 301 0
+ERROR 2023-05-04 15:51:00,072 Internal Server Error: /institute/admin_home/
+Traceback (most recent call last):
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\institute\request_views.py", line 129, in display_admin_home
+    return db_connect_views.display_admin_home(request)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\institute\db_connect_views.py", line 684, in display_admin_home
+    alluser = Alluser.objects.get(user=user)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+loginandregister.models.Alluser.DoesNotExist: Alluser matching query does not exist.
+ERROR 2023-05-04 15:51:00,073 "GET /institute/admin_home/ HTTP/1.1" 500 79079
+ERROR 2023-05-04 15:51:00,317 Internal Server Error: /institute/admin_home/
+Traceback (most recent call last):
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\institute\request_views.py", line 129, in display_admin_home
+    return db_connect_views.display_admin_home(request)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\institute\db_connect_views.py", line 684, in display_admin_home
+    alluser = Alluser.objects.get(user=user)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+loginandregister.models.Alluser.DoesNotExist: Alluser matching query does not exist.
+ERROR 2023-05-04 15:51:00,319 "GET /institute/admin_home/ HTTP/1.1" 500 78181
+INFO 2023-05-04 15:51:14,703 "GET /loginandregister/login/ HTTP/1.1" 200 2375
+INFO 2023-05-04 15:51:15,223 "GET /loginandregister/login/ HTTP/1.1" 200 2375
+INFO 2023-05-04 15:51:34,526 "POST /loginandregister/login/validateuser/ HTTP/1.1" 302 0
+INFO 2023-05-04 15:51:34,642 "GET /institute/admin_home/ HTTP/1.1" 200 40966
+WARNING 2023-05-04 15:51:34,671 "GET /static/javascript/institute/jquery.js HTTP/1.1" 404 1849
+WARNING 2023-05-04 15:51:34,970 "GET /static/javascript/institute/popper.js HTTP/1.1" 404 1849
+INFO 2023-05-04 15:51:35,087 "GET /institute/admin_home/ HTTP/1.1" 200 40966
+ERROR 2023-05-04 15:51:55,844 Internal Server Error: /student/Student_bulk_upload/
+Traceback (most recent call last):
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "auth_user_username_key"
+DETAIL:  Key (username)=(0801EC221009) already exists.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\student\request_views.py", line 163, in Student_bulk_upload
+    return db_connect_views.Student_bulk_upload(request)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\student\db_connect_views.py", line 607, in Student_bulk_upload
+    user=User.objects.create_user(username=row[0].value, password=row[1].value, first_name=row[2].value, last_name=row[3].value, email=row[4].value)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\contrib\auth\models.py", line 152, in create_user
+    return self._create_user(username, email, password, **extra_fields)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\contrib\auth\models.py", line 146, in _create_user
+    user.save(using=self._db)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\contrib\auth\base_user.py", line 67, in save
+    super().save(*args, **kwargs)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\base.py", line 763, in save_base
+    updated = self._save_table(
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\base.py", line 868, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\base.py", line 906, in _do_insert
+    return manager._insert(
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\compiler.py", line 1416, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: duplicate key value violates unique constraint "auth_user_username_key"
+DETAIL:  Key (username)=(0801EC221009) already exists.
+
+ERROR 2023-05-04 15:51:55,845 "POST /student/Student_bulk_upload/ HTTP/1.1" 500 171760
+ERROR 2023-05-04 15:51:56,068 Internal Server Error: /student/Student_bulk_upload/
+Traceback (most recent call last):
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\utils\datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'file'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\student\request_views.py", line 163, in Student_bulk_upload
+    return db_connect_views.Student_bulk_upload(request)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\student\db_connect_views.py", line 600, in Student_bulk_upload
+    excelfile= request.FILES['file']
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\utils\datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'file'
+ERROR 2023-05-04 15:51:56,069 "GET /student/Student_bulk_upload/ HTTP/1.1" 500 75829
+INFO 2023-05-04 15:52:08,316 "GET /institute/admin_home/ HTTP/1.1" 200 42240
+INFO 2023-05-04 15:52:20,142 "GET /admin/auth/user/ HTTP/1.1" 302 0
+INFO 2023-05-04 15:52:20,216 "GET /admin/login/?next=/admin/auth/user/ HTTP/1.1" 200 2389
+INFO 2023-05-04 15:52:20,329 "GET /admin/login/?next=/admin/auth/user/ HTTP/1.1" 200 2389
+INFO 2023-05-04 15:52:32,478 "POST /admin/login/?next=/admin/auth/user/ HTTP/1.1" 302 0
+INFO 2023-05-04 15:52:32,675 "GET /admin/auth/user/ HTTP/1.1" 200 57089
+INFO 2023-05-04 15:52:32,846 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2023-05-04 15:52:33,103 "GET /admin/auth/user/ HTTP/1.1" 200 57089
+INFO 2023-05-04 15:54:09,604 "POST /admin/auth/user/ HTTP/1.1" 200 23706
+INFO 2023-05-04 15:54:09,851 "GET /admin/auth/user/ HTTP/1.1" 200 57089
+INFO 2023-05-04 15:54:13,036 "POST /admin/auth/user/ HTTP/1.1" 302 0
+INFO 2023-05-04 15:54:13,204 "GET /admin/auth/user/ HTTP/1.1" 200 39302
+INFO 2023-05-04 15:54:13,380 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2023-05-04 15:54:13,576 "GET /admin/auth/user/ HTTP/1.1" 200 39166
+INFO 2023-05-04 15:55:21,830 "GET /admin/loginandregister/alluser/ HTTP/1.1" 200 28447
+INFO 2023-05-04 15:55:21,997 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2023-05-04 15:55:22,194 "GET /admin/loginandregister/alluser/ HTTP/1.1" 200 28447
+INFO 2023-05-04 15:55:40,798 "POST /admin/loginandregister/alluser/ HTTP/1.1" 200 18287
+INFO 2023-05-04 15:55:41,000 "GET /admin/loginandregister/alluser/ HTTP/1.1" 200 28447
+INFO 2023-05-04 15:55:42,635 "POST /admin/loginandregister/alluser/ HTTP/1.1" 302 0
+INFO 2023-05-04 15:55:42,804 "GET /admin/loginandregister/alluser/ HTTP/1.1" 200 28351
+INFO 2023-05-04 15:55:42,868 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2023-05-04 15:55:43,065 "GET /admin/loginandregister/alluser/ HTTP/1.1" 200 28214
+INFO 2023-05-04 15:56:10,412 "GET /admin/student/student/ HTTP/1.1" 200 21907
+INFO 2023-05-04 15:56:10,474 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2023-05-04 15:56:10,616 "GET /admin/student/student/ HTTP/1.1" 200 21907
+ERROR 2023-05-04 15:56:37,308 Internal Server Error: /institute/admin_home/
+Traceback (most recent call last):
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\institute\request_views.py", line 129, in display_admin_home
+    return db_connect_views.display_admin_home(request)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\institute\db_connect_views.py", line 684, in display_admin_home
+    alluser = Alluser.objects.get(user=user)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+loginandregister.models.Alluser.DoesNotExist: Alluser matching query does not exist.
+ERROR 2023-05-04 15:56:37,309 "GET /institute/admin_home/ HTTP/1.1" 500 79390
+ERROR 2023-05-04 15:56:37,463 Internal Server Error: /institute/admin_home/
+Traceback (most recent call last):
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\institute\request_views.py", line 129, in display_admin_home
+    return db_connect_views.display_admin_home(request)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\institute\db_connect_views.py", line 684, in display_admin_home
+    alluser = Alluser.objects.get(user=user)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+loginandregister.models.Alluser.DoesNotExist: Alluser matching query does not exist.
+ERROR 2023-05-04 15:56:37,464 "GET /institute/admin_home/ HTTP/1.1" 500 78181
+INFO 2023-05-04 15:56:45,009 "GET /loginandregister/login/ HTTP/1.1" 200 2375
+INFO 2023-05-04 15:56:53,970 "POST /loginandregister/login/validateuser/ HTTP/1.1" 302 0
+INFO 2023-05-04 15:56:54,087 "GET /institute/admin_home/ HTTP/1.1" 200 40966
+WARNING 2023-05-04 15:56:54,110 "GET /static/javascript/institute/jquery.js HTTP/1.1" 404 1849
+WARNING 2023-05-04 15:56:54,415 "GET /static/javascript/institute/popper.js HTTP/1.1" 404 1849
+INFO 2023-05-04 15:56:54,545 "GET /institute/admin_home/ HTTP/1.1" 200 40966
+ERROR 2023-05-04 15:57:06,172 Internal Server Error: /student/Student_bulk_upload/
+Traceback (most recent call last):
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "auth_user_username_key"
+DETAIL:  Key (username)=(0801CS191102) already exists.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\student\request_views.py", line 163, in Student_bulk_upload
+    return db_connect_views.Student_bulk_upload(request)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\student\db_connect_views.py", line 607, in Student_bulk_upload
+    user=User.objects.create_user(username=row[0].value, password=row[1].value, first_name=row[2].value, last_name=row[3].value, email=row[4].value)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\contrib\auth\models.py", line 152, in create_user
+    return self._create_user(username, email, password, **extra_fields)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\contrib\auth\models.py", line 146, in _create_user
+    user.save(using=self._db)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\contrib\auth\base_user.py", line 67, in save
+    super().save(*args, **kwargs)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\base.py", line 726, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\base.py", line 763, in save_base
+    updated = self._save_table(
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\base.py", line 868, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\base.py", line 906, in _do_insert
+    return manager._insert(
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\compiler.py", line 1416, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: duplicate key value violates unique constraint "auth_user_username_key"
+DETAIL:  Key (username)=(0801CS191102) already exists.
+
+ERROR 2023-05-04 15:57:06,174 "POST /student/Student_bulk_upload/ HTTP/1.1" 500 171098
+ERROR 2023-05-04 15:57:06,335 Internal Server Error: /student/Student_bulk_upload/
+Traceback (most recent call last):
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\utils\datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'file'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\student\request_views.py", line 163, in Student_bulk_upload
+    return db_connect_views.Student_bulk_upload(request)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\student\db_connect_views.py", line 600, in Student_bulk_upload
+    excelfile= request.FILES['file']
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\utils\datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'file'
+ERROR 2023-05-04 15:57:06,336 "GET /student/Student_bulk_upload/ HTTP/1.1" 500 75829
+INFO 2023-05-04 15:57:32,393 "GET /institute/admin_home/ HTTP/1.1" 200 40966
+INFO 2023-05-04 15:57:56,349 "GET /admin/student/student/ HTTP/1.1" 302 0
+INFO 2023-05-04 15:57:56,428 "GET /admin/login/?next=/admin/student/student/ HTTP/1.1" 200 2401
+INFO 2023-05-04 15:57:56,633 "GET /admin/login/?next=/admin/student/student/ HTTP/1.1" 200 2401
+INFO 2023-05-04 15:58:04,603 "POST /admin/login/?next=/admin/student/student/ HTTP/1.1" 302 0
+INFO 2023-05-04 15:58:04,712 "GET /admin/student/student/ HTTP/1.1" 200 21907
+INFO 2023-05-04 15:58:04,775 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2023-05-04 15:58:05,009 "GET /admin/student/student/ HTTP/1.1" 200 21907
+INFO 2023-05-04 15:58:08,635 "GET /admin/auth/user/ HTTP/1.1" 200 39166
+INFO 2023-05-04 15:58:08,709 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2023-05-04 15:58:08,926 "GET /admin/auth/user/ HTTP/1.1" 200 39166
+INFO 2023-05-04 16:00:12,402 "GET /loginandregister/logout/ HTTP/1.1" 302 0
+INFO 2023-05-04 16:00:12,406 "GET /loginandregister/login/ HTTP/1.1" 200 2375
+INFO 2023-05-04 16:00:12,819 "GET /loginandregister/login/ HTTP/1.1" 200 2375
+INFO 2023-05-04 16:00:20,810 "POST /loginandregister/login/validateuser/ HTTP/1.1" 302 0
+INFO 2023-05-04 16:00:20,928 "GET /institute/admin_home/ HTTP/1.1" 200 40966
+WARNING 2023-05-04 16:00:20,946 "GET /static/javascript/institute/jquery.js HTTP/1.1" 404 1849
+WARNING 2023-05-04 16:00:21,259 "GET /static/javascript/institute/popper.js HTTP/1.1" 404 1849
+INFO 2023-05-04 16:00:21,480 "GET /institute/admin_home/ HTTP/1.1" 200 40966
+ERROR 2023-05-04 16:00:41,929 Internal Server Error: /student/Student_bulk_upload/
+Traceback (most recent call last):
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\student\request_views.py", line 163, in Student_bulk_upload
+    return db_connect_views.Student_bulk_upload(request)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\student\db_connect_views.py", line 607, in Student_bulk_upload
+    user=User.objects.create_user(username=row[0].value, password=row[1].value, first_name=row[2].value, last_name=row[3].value, email=row[4].value)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\contrib\auth\models.py", line 152, in create_user
+    return self._create_user(username, email, password, **extra_fields)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\contrib\auth\models.py", line 137, in _create_user
+    raise ValueError('The given username must be set')
+ValueError: The given username must be set
+ERROR 2023-05-04 16:00:41,930 "POST /student/Student_bulk_upload/ HTTP/1.1" 500 89360
+ERROR 2023-05-04 16:00:42,083 Internal Server Error: /student/Student_bulk_upload/
+Traceback (most recent call last):
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\utils\datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'file'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\student\request_views.py", line 163, in Student_bulk_upload
+    return db_connect_views.Student_bulk_upload(request)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\student\db_connect_views.py", line 600, in Student_bulk_upload
+    excelfile= request.FILES['file']
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\utils\datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'file'
+ERROR 2023-05-04 16:00:42,084 "GET /student/Student_bulk_upload/ HTTP/1.1" 500 75829
+INFO 2023-05-04 16:01:39,063 "GET /institute/admin_home/ HTTP/1.1" 200 141566
+INFO 2023-05-04 16:01:42,375 "GET /institute/admin_home/ HTTP/1.1" 200 141566
+WARNING 2023-05-04 16:01:42,399 "GET /static/javascript/institute/jquery.js HTTP/1.1" 404 1849
+WARNING 2023-05-04 16:01:42,712 "GET /static/javascript/institute/popper.js HTTP/1.1" 404 1849
+INFO 2023-05-04 16:01:43,090 "GET /institute/admin_home/ HTTP/1.1" 200 141566
+INFO 2023-05-04 16:06:20,651 "GET /admin/auth/user/ HTTP/1.1" 302 0
+INFO 2023-05-04 16:06:20,727 "GET /admin/login/?next=/admin/auth/user/ HTTP/1.1" 200 2389
+INFO 2023-05-04 16:06:20,836 "GET /admin/login/?next=/admin/auth/user/ HTTP/1.1" 200 2389
+INFO 2023-05-04 16:06:30,147 "POST /admin/login/?next=/admin/auth/user/ HTTP/1.1" 302 0
+INFO 2023-05-04 16:06:30,372 "GET /admin/auth/user/ HTTP/1.1" 200 64207
+INFO 2023-05-04 16:06:30,543 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2023-05-04 16:06:30,821 "GET /admin/auth/user/ HTTP/1.1" 200 64207
+INFO 2023-05-04 16:06:32,764 "GET /admin/auth/user/ HTTP/1.1" 200 64207
+INFO 2023-05-04 16:06:32,830 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2023-05-04 16:06:33,106 "GET /admin/auth/user/ HTTP/1.1" 200 64207
+INFO 2023-05-04 16:07:34,580 "GET /admin/auth/user/?p=2 HTTP/1.1" 200 31255
+INFO 2023-05-04 16:07:34,645 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2023-05-04 16:07:34,798 "GET /admin/auth/user/?p=2 HTTP/1.1" 200 31255
+INFO 2023-05-04 16:07:43,859 "GET /admin/auth/user/?p=1 HTTP/1.1" 200 66833
+INFO 2023-05-04 16:07:43,920 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2023-05-04 16:07:44,211 "GET /admin/auth/user/?p=1 HTTP/1.1" 200 66833
+INFO 2023-05-04 16:08:43,100 "POST /admin/auth/user/?p=1 HTTP/1.1" 200 46632
+INFO 2023-05-04 16:08:43,399 "GET /admin/auth/user/?p=1 HTTP/1.1" 200 66833
+INFO 2023-05-04 16:08:47,872 "POST /admin/auth/user/?p=1 HTTP/1.1" 302 0
+INFO 2023-05-04 16:08:48,023 "GET /admin/auth/user/?p=1 HTTP/1.1" 200 40890
+INFO 2023-05-04 16:08:48,087 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2023-05-04 16:08:48,274 "GET /admin/auth/user/?p=1 HTTP/1.1" 200 40754
+INFO 2023-05-04 16:09:11,579 "POST /admin/auth/user/?p=1 HTTP/1.1" 200 18373
+INFO 2023-05-04 16:09:11,770 "GET /admin/auth/user/?p=1 HTTP/1.1" 200 40754
+INFO 2023-05-04 16:09:13,210 "POST /admin/auth/user/?p=1 HTTP/1.1" 302 0
+INFO 2023-05-04 16:09:13,359 "GET /admin/auth/user/?p=1 HTTP/1.1" 200 40444
+INFO 2023-05-04 16:09:13,421 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2023-05-04 16:09:13,635 "GET /admin/auth/user/?p=1 HTTP/1.1" 200 40310
+INFO 2023-05-04 16:10:07,364 "GET /loginandregister/login/ HTTP/1.1" 200 2375
+INFO 2023-05-04 16:10:13,981 "POST /loginandregister/login/validateuser/ HTTP/1.1" 302 0
+INFO 2023-05-04 16:10:14,103 "GET /institute/admin_home/ HTTP/1.1" 200 40966
+WARNING 2023-05-04 16:10:14,123 "GET /static/javascript/institute/jquery.js HTTP/1.1" 404 1849
+WARNING 2023-05-04 16:10:14,433 "GET /static/javascript/institute/popper.js HTTP/1.1" 404 1849
+INFO 2023-05-04 16:10:14,561 "GET /institute/admin_home/ HTTP/1.1" 200 40966
+ERROR 2023-05-04 16:10:38,736 Internal Server Error: /student/Student_bulk_upload/
+Traceback (most recent call last):
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\student\request_views.py", line 163, in Student_bulk_upload
+    return db_connect_views.Student_bulk_upload(request)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\student\db_connect_views.py", line 607, in Student_bulk_upload
+    user=User.objects.create_user(username=row[0].value, password=row[1].value, first_name=row[2].value, last_name=row[3].value, email=row[4].value)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\contrib\auth\models.py", line 152, in create_user
+    return self._create_user(username, email, password, **extra_fields)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\contrib\auth\models.py", line 137, in _create_user
+    raise ValueError('The given username must be set')
+ValueError: The given username must be set
+ERROR 2023-05-04 16:10:38,737 "POST /student/Student_bulk_upload/ HTTP/1.1" 500 89360
+ERROR 2023-05-04 16:10:38,882 Internal Server Error: /student/Student_bulk_upload/
+Traceback (most recent call last):
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\utils\datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'file'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\student\request_views.py", line 163, in Student_bulk_upload
+    return db_connect_views.Student_bulk_upload(request)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\student\db_connect_views.py", line 600, in Student_bulk_upload
+    excelfile= request.FILES['file']
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\utils\datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'file'
+ERROR 2023-05-04 16:10:38,883 "GET /student/Student_bulk_upload/ HTTP/1.1" 500 75829
+INFO 2023-05-04 16:10:53,354 "GET /institute/admin_home/ HTTP/1.1" 200 141572
+INFO 2023-05-04 16:10:56,738 "GET /institute/admin_home/ HTTP/1.1" 200 141572
+WARNING 2023-05-04 16:10:56,768 "GET /static/javascript/institute/popper.js HTTP/1.1" 404 1849
+WARNING 2023-05-04 16:10:56,768 "GET /static/javascript/institute/jquery.js HTTP/1.1" 404 1849
+INFO 2023-05-04 16:10:57,229 "GET /institute/admin_home/ HTTP/1.1" 200 141572
+INFO 2023-05-04 16:12:59,869 "GET /admin/auth/user/?p=1 HTTP/1.1" 302 0
+INFO 2023-05-04 16:12:59,944 "GET /admin/login/?next=/admin/auth/user/%3Fp%3D1 HTTP/1.1" 200 2401
+INFO 2023-05-04 16:13:00,064 "GET /admin/login/?next=/admin/auth/user/%3Fp%3D1 HTTP/1.1" 200 2401
+INFO 2023-05-04 16:13:07,342 "POST /admin/login/?next=/admin/auth/user/%3Fp%3D1 HTTP/1.1" 302 0
+INFO 2023-05-04 16:13:07,572 "GET /admin/auth/user/?p=1 HTTP/1.1" 200 66839
+INFO 2023-05-04 16:13:07,652 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2023-05-04 16:13:08,083 "GET /admin/auth/user/?p=1 HTTP/1.1" 200 66839
+INFO 2023-05-04 16:13:10,848 "GET /admin/auth/user/ HTTP/1.1" 200 64213
+INFO 2023-05-04 16:13:11,027 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2023-05-04 16:13:11,306 "GET /admin/auth/user/ HTTP/1.1" 200 64213
+INFO 2023-05-04 16:14:05,720 "POST /admin/auth/user/ HTTP/1.1" 200 46640
+INFO 2023-05-04 16:14:05,989 "GET /admin/auth/user/ HTTP/1.1" 200 64213
+INFO 2023-05-04 16:14:10,249 "POST /admin/auth/user/ HTTP/1.1" 302 0
+INFO 2023-05-04 16:14:10,394 "GET /admin/auth/user/ HTTP/1.1" 200 39722
+INFO 2023-05-04 16:14:10,460 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2023-05-04 16:14:10,648 "GET /admin/auth/user/ HTTP/1.1" 200 39586
+INFO 2023-05-04 16:14:21,678 "POST /admin/auth/user/ HTTP/1.1" 200 18377
+INFO 2023-05-04 16:14:21,952 "GET /admin/auth/user/ HTTP/1.1" 200 39586
+INFO 2023-05-04 16:14:23,279 "POST /admin/auth/user/ HTTP/1.1" 302 0
+INFO 2023-05-04 16:14:23,421 "GET /admin/auth/user/ HTTP/1.1" 200 39300
+INFO 2023-05-04 16:14:23,483 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2023-05-04 16:14:23,680 "GET /admin/auth/user/ HTTP/1.1" 200 39166
+INFO 2023-05-04 16:14:35,047 "GET /loginandregister/logout/ HTTP/1.1" 302 0
+INFO 2023-05-04 16:14:35,051 "GET /loginandregister/login/ HTTP/1.1" 200 2375
+INFO 2023-05-04 16:14:35,578 "GET /loginandregister/login/ HTTP/1.1" 200 2375
+INFO 2023-05-04 16:14:43,569 "POST /loginandregister/login/validateuser/ HTTP/1.1" 302 0
+INFO 2023-05-04 16:14:43,682 "GET /institute/admin_home/ HTTP/1.1" 200 40966
+WARNING 2023-05-04 16:14:43,703 "GET /static/javascript/institute/jquery.js HTTP/1.1" 404 1849
+WARNING 2023-05-04 16:14:44,014 "GET /static/javascript/institute/popper.js HTTP/1.1" 404 1849
+INFO 2023-05-04 16:14:44,132 "GET /institute/admin_home/ HTTP/1.1" 200 40966
+ERROR 2023-05-04 16:15:04,798 Internal Server Error: /student/Student_bulk_upload/
+Traceback (most recent call last):
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\student\request_views.py", line 163, in Student_bulk_upload
+    return db_connect_views.Student_bulk_upload(request)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\student\db_connect_views.py", line 607, in Student_bulk_upload
+    user=User.objects.create_user(username=row[0].value, password=row[1].value, first_name=row[2].value, last_name=row[3].value, email=row[4].value)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\contrib\auth\models.py", line 152, in create_user
+    return self._create_user(username, email, password, **extra_fields)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\contrib\auth\models.py", line 137, in _create_user
+    raise ValueError('The given username must be set')
+ValueError: The given username must be set
+ERROR 2023-05-04 16:15:04,799 "POST /student/Student_bulk_upload/ HTTP/1.1" 500 89360
+ERROR 2023-05-04 16:15:04,946 Internal Server Error: /student/Student_bulk_upload/
+Traceback (most recent call last):
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\utils\datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'file'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\student\request_views.py", line 163, in Student_bulk_upload
+    return db_connect_views.Student_bulk_upload(request)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\student\db_connect_views.py", line 600, in Student_bulk_upload
+    excelfile= request.FILES['file']
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\utils\datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'file'
+ERROR 2023-05-04 16:15:04,946 "GET /student/Student_bulk_upload/ HTTP/1.1" 500 75829
+INFO 2023-05-04 16:19:31,262 "GET /admin/auth/user/ HTTP/1.1" 302 0
+INFO 2023-05-04 16:19:31,342 "GET /admin/login/?next=/admin/auth/user/ HTTP/1.1" 200 2389
+INFO 2023-05-04 16:19:31,469 "GET /admin/login/?next=/admin/auth/user/ HTTP/1.1" 200 2389
+INFO 2023-05-04 16:19:38,558 "POST /admin/login/?next=/admin/auth/user/ HTTP/1.1" 302 0
+INFO 2023-05-04 16:19:38,790 "GET /admin/auth/user/ HTTP/1.1" 200 64213
+INFO 2023-05-04 16:19:38,968 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2023-05-04 16:19:39,372 "GET /admin/auth/user/ HTTP/1.1" 200 64213
+INFO 2023-05-04 16:20:43,359 "POST /admin/auth/user/ HTTP/1.1" 200 46640
+INFO 2023-05-04 16:20:43,744 "GET /admin/auth/user/ HTTP/1.1" 200 64213
+INFO 2023-05-04 16:20:49,049 "POST /admin/auth/user/ HTTP/1.1" 302 0
+INFO 2023-05-04 16:20:49,244 "GET /admin/auth/user/ HTTP/1.1" 200 39722
+INFO 2023-05-04 16:20:49,304 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2023-05-04 16:20:49,496 "GET /admin/auth/user/ HTTP/1.1" 200 39586
+INFO 2023-05-04 16:21:15,995 "POST /admin/auth/user/ HTTP/1.1" 200 18377
+INFO 2023-05-04 16:21:16,181 "GET /admin/auth/user/ HTTP/1.1" 200 39586
+INFO 2023-05-04 16:21:17,460 "POST /admin/auth/user/ HTTP/1.1" 302 0
+INFO 2023-05-04 16:21:17,602 "GET /admin/auth/user/ HTTP/1.1" 200 39300
+INFO 2023-05-04 16:21:17,666 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2023-05-04 16:21:17,964 "GET /admin/auth/user/ HTTP/1.1" 200 39166
+ERROR 2023-05-04 16:21:29,557 Internal Server Error: /institute/admin_home/
+Traceback (most recent call last):
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\institute\request_views.py", line 129, in display_admin_home
+    return db_connect_views.display_admin_home(request)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\institute\db_connect_views.py", line 684, in display_admin_home
+    alluser = Alluser.objects.get(user=user)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+loginandregister.models.Alluser.DoesNotExist: Alluser matching query does not exist.
+ERROR 2023-05-04 16:21:29,559 "GET /institute/admin_home/ HTTP/1.1" 500 79122
+ERROR 2023-05-04 16:21:29,705 Internal Server Error: /institute/admin_home/
+Traceback (most recent call last):
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\institute\request_views.py", line 129, in display_admin_home
+    return db_connect_views.display_admin_home(request)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\institute\db_connect_views.py", line 684, in display_admin_home
+    alluser = Alluser.objects.get(user=user)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+loginandregister.models.Alluser.DoesNotExist: Alluser matching query does not exist.
+ERROR 2023-05-04 16:21:29,706 "GET /institute/admin_home/ HTTP/1.1" 500 78181
+INFO 2023-05-04 16:21:31,427 "GET /loginandregister/login/ HTTP/1.1" 200 2375
+INFO 2023-05-04 16:21:36,648 "POST /loginandregister/login/validateuser/ HTTP/1.1" 302 0
+INFO 2023-05-04 16:21:36,762 "GET /institute/admin_home/ HTTP/1.1" 200 40966
+WARNING 2023-05-04 16:21:36,782 "GET /static/javascript/institute/jquery.js HTTP/1.1" 404 1849
+WARNING 2023-05-04 16:21:37,086 "GET /static/javascript/institute/popper.js HTTP/1.1" 404 1849
+INFO 2023-05-04 16:21:37,213 "GET /institute/admin_home/ HTTP/1.1" 200 40966
+ERROR 2023-05-04 16:22:00,427 Internal Server Error: /student/Student_bulk_upload/
+Traceback (most recent call last):
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\student\request_views.py", line 163, in Student_bulk_upload
+    return db_connect_views.Student_bulk_upload(request)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\student\db_connect_views.py", line 607, in Student_bulk_upload
+    user=User.objects.create_user(username=row[0].value, password=row[1].value, first_name=row[2].value, last_name=row[3].value, email=row[4].value)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\contrib\auth\models.py", line 152, in create_user
+    return self._create_user(username, email, password, **extra_fields)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\contrib\auth\models.py", line 137, in _create_user
+    raise ValueError('The given username must be set')
+ValueError: The given username must be set
+ERROR 2023-05-04 16:22:00,428 "POST /student/Student_bulk_upload/ HTTP/1.1" 500 89360
+ERROR 2023-05-04 16:22:00,577 Internal Server Error: /student/Student_bulk_upload/
+Traceback (most recent call last):
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\utils\datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'file'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\student\request_views.py", line 163, in Student_bulk_upload
+    return db_connect_views.Student_bulk_upload(request)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\student\db_connect_views.py", line 600, in Student_bulk_upload
+    excelfile= request.FILES['file']
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\utils\datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'file'
+ERROR 2023-05-04 16:22:00,578 "GET /student/Student_bulk_upload/ HTTP/1.1" 500 75829
+INFO 2023-05-04 16:34:25,010 D:\javascript and nodejs tuts\webdev\NaacDataAggregator\student\db_connect_views.py changed, reloading.
+INFO 2023-05-04 16:34:25,681 Watching for file changes with StatReloader
+INFO 2023-05-04 16:35:41,660 "GET /admin/auth/user/ HTTP/1.1" 302 0
+INFO 2023-05-04 16:35:41,763 "GET /admin/login/?next=/admin/auth/user/ HTTP/1.1" 200 2389
+INFO 2023-05-04 16:35:42,295 "GET /admin/login/?next=/admin/auth/user/ HTTP/1.1" 200 2389
+INFO 2023-05-04 16:35:50,492 "POST /admin/login/?next=/admin/auth/user/ HTTP/1.1" 302 0
+INFO 2023-05-04 16:35:50,731 "GET /admin/auth/user/ HTTP/1.1" 200 64213
+INFO 2023-05-04 16:35:50,908 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2023-05-04 16:35:51,235 "GET /admin/auth/user/ HTTP/1.1" 200 64213
+INFO 2023-05-04 16:38:26,338 "POST /admin/auth/user/ HTTP/1.1" 200 46640
+INFO 2023-05-04 16:38:26,623 "GET /admin/auth/user/ HTTP/1.1" 200 64213
+INFO 2023-05-04 16:38:32,118 "POST /admin/auth/user/ HTTP/1.1" 302 0
+INFO 2023-05-04 16:38:32,261 "GET /admin/auth/user/ HTTP/1.1" 200 39722
+INFO 2023-05-04 16:38:32,331 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2023-05-04 16:38:32,531 "GET /admin/auth/user/ HTTP/1.1" 200 39586
+INFO 2023-05-04 16:39:03,028 "POST /admin/auth/user/ HTTP/1.1" 200 18377
+INFO 2023-05-04 16:39:03,220 "GET /admin/auth/user/ HTTP/1.1" 200 39586
+INFO 2023-05-04 16:39:04,739 "POST /admin/auth/user/ HTTP/1.1" 302 0
+INFO 2023-05-04 16:39:04,881 "GET /admin/auth/user/ HTTP/1.1" 200 39300
+INFO 2023-05-04 16:39:04,948 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2023-05-04 16:39:05,145 "GET /admin/auth/user/ HTTP/1.1" 200 39166
+ERROR 2023-05-04 16:39:15,540 Internal Server Error: /institute/admin_home/
+Traceback (most recent call last):
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\institute\request_views.py", line 129, in display_admin_home
+    return db_connect_views.display_admin_home(request)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\institute\db_connect_views.py", line 684, in display_admin_home
+    alluser = Alluser.objects.get(user=user)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+loginandregister.models.Alluser.DoesNotExist: Alluser matching query does not exist.
+ERROR 2023-05-04 16:39:15,543 "GET /institute/admin_home/ HTTP/1.1" 500 79122
+ERROR 2023-05-04 16:39:15,710 Internal Server Error: /institute/admin_home/
+Traceback (most recent call last):
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\institute\request_views.py", line 129, in display_admin_home
+    return db_connect_views.display_admin_home(request)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\institute\db_connect_views.py", line 684, in display_admin_home
+    alluser = Alluser.objects.get(user=user)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+loginandregister.models.Alluser.DoesNotExist: Alluser matching query does not exist.
+ERROR 2023-05-04 16:39:15,711 "GET /institute/admin_home/ HTTP/1.1" 500 78181
+INFO 2023-05-04 16:39:16,677 "GET /loginandregister/login/ HTTP/1.1" 200 2375
+INFO 2023-05-04 16:39:21,893 "POST /loginandregister/login/validateuser/ HTTP/1.1" 302 0
+INFO 2023-05-04 16:39:22,010 "GET /institute/admin_home/ HTTP/1.1" 200 40966
+WARNING 2023-05-04 16:39:22,030 "GET /static/javascript/institute/jquery.js HTTP/1.1" 404 1849
+WARNING 2023-05-04 16:39:22,340 "GET /static/javascript/institute/popper.js HTTP/1.1" 404 1849
+INFO 2023-05-04 16:39:22,462 "GET /institute/admin_home/ HTTP/1.1" 200 40966
+INFO 2023-05-04 16:40:06,788 "POST /student/Student_bulk_upload/ HTTP/1.1" 302 0
+INFO 2023-05-04 16:40:06,792 "GET /institute/admin_home HTTP/1.1" 301 0
+INFO 2023-05-04 16:40:07,208 "GET /institute/admin_home/ HTTP/1.1" 200 141572
+WARNING 2023-05-04 16:40:07,240 "GET /static/javascript/institute/jquery.js HTTP/1.1" 404 1849
+WARNING 2023-05-04 16:40:07,241 "GET /static/javascript/institute/popper.js HTTP/1.1" 404 1849
+INFO 2023-05-04 16:40:07,632 "GET /institute/admin_home/ HTTP/1.1" 200 141572
+INFO 2023-05-04 16:41:08,486 "GET /admin/auth/user/ HTTP/1.1" 302 0
+INFO 2023-05-04 16:41:08,564 "GET /admin/login/?next=/admin/auth/user/ HTTP/1.1" 200 2389
+INFO 2023-05-04 16:41:08,675 "GET /admin/login/?next=/admin/auth/user/ HTTP/1.1" 200 2389
+INFO 2023-05-04 16:41:15,726 "POST /admin/login/?next=/admin/auth/user/ HTTP/1.1" 302 0
+INFO 2023-05-04 16:41:16,049 "GET /admin/auth/user/ HTTP/1.1" 200 64213
+INFO 2023-05-04 16:41:16,118 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2023-05-04 16:41:16,441 "GET /admin/auth/user/ HTTP/1.1" 200 64213
+INFO 2023-05-04 16:42:45,347 "POST /admin/auth/user/ HTTP/1.1" 200 46640
+INFO 2023-05-04 16:42:45,659 "GET /admin/auth/user/ HTTP/1.1" 200 64213
+INFO 2023-05-04 16:42:50,737 "POST /admin/auth/user/ HTTP/1.1" 302 0
+INFO 2023-05-04 16:42:50,904 "GET /admin/auth/user/ HTTP/1.1" 200 39722
+INFO 2023-05-04 16:42:50,968 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2023-05-04 16:42:51,158 "GET /admin/auth/user/ HTTP/1.1" 200 39586
+INFO 2023-05-04 16:43:03,239 "POST /admin/auth/user/ HTTP/1.1" 200 18377
+INFO 2023-05-04 16:43:03,431 "GET /admin/auth/user/ HTTP/1.1" 200 39586
+INFO 2023-05-04 16:43:06,423 "POST /admin/auth/user/ HTTP/1.1" 302 0
+INFO 2023-05-04 16:43:06,563 "GET /admin/auth/user/ HTTP/1.1" 200 39300
+INFO 2023-05-04 16:43:06,628 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2023-05-04 16:43:06,827 "GET /admin/auth/user/ HTTP/1.1" 200 39166
+INFO 2023-05-04 16:44:18,497 D:\javascript and nodejs tuts\webdev\NaacDataAggregator\teacher\db_connect_views.py changed, reloading.
+INFO 2023-05-04 16:44:19,155 Watching for file changes with StatReloader
+INFO 2023-05-04 16:49:34,744 "GET /admin/auth/user/ HTTP/1.1" 200 39166
+INFO 2023-05-04 16:49:34,809 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2023-05-04 16:49:35,412 "GET /admin/auth/user/ HTTP/1.1" 200 39166
+ERROR 2023-05-04 16:55:10,929 Internal Server Error: /institute/admin_home/
+Traceback (most recent call last):
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\institute\request_views.py", line 129, in display_admin_home
+    return db_connect_views.display_admin_home(request)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\institute\db_connect_views.py", line 684, in display_admin_home
+    alluser = Alluser.objects.get(user=user)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+loginandregister.models.Alluser.DoesNotExist: Alluser matching query does not exist.
+ERROR 2023-05-04 16:55:10,931 "GET /institute/admin_home/ HTTP/1.1" 500 79122
+ERROR 2023-05-04 16:55:11,387 Internal Server Error: /institute/admin_home/
+Traceback (most recent call last):
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\institute\request_views.py", line 129, in display_admin_home
+    return db_connect_views.display_admin_home(request)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\institute\db_connect_views.py", line 684, in display_admin_home
+    alluser = Alluser.objects.get(user=user)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+loginandregister.models.Alluser.DoesNotExist: Alluser matching query does not exist.
+ERROR 2023-05-04 16:55:11,387 "GET /institute/admin_home/ HTTP/1.1" 500 78181
+ERROR 2023-05-04 16:55:14,690 Internal Server Error: /institute/admin_home/
+Traceback (most recent call last):
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\institute\request_views.py", line 129, in display_admin_home
+    return db_connect_views.display_admin_home(request)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\institute\db_connect_views.py", line 684, in display_admin_home
+    alluser = Alluser.objects.get(user=user)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+loginandregister.models.Alluser.DoesNotExist: Alluser matching query does not exist.
+ERROR 2023-05-04 16:55:14,691 "GET /institute/admin_home/ HTTP/1.1" 500 78181
+INFO 2023-05-04 16:55:16,543 "GET /loginandregister/login/ HTTP/1.1" 200 2375
+INFO 2023-05-04 16:55:32,336 "GET /institute/home HTTP/1.1" 301 0
+INFO 2023-05-04 16:55:32,341 "GET /institute/home/ HTTP/1.1" 200 12582
+INFO 2023-05-04 16:55:33,811 "GET /static/images/institute/ayushj_photo.jpeg HTTP/1.1" 304 0
+INFO 2023-05-04 16:55:33,811 "GET /static/images/institute/ayushk_photo.jpeg HTTP/1.1" 304 0
+INFO 2023-05-04 16:55:33,813 "GET /static/images/institute/arpit_photo.jpeg HTTP/1.1" 304 0
+INFO 2023-05-04 16:55:33,814 "GET /static/images/institute/kartik_photo.jpeg HTTP/1.1" 304 0
+INFO 2023-05-04 16:55:33,899 "GET /institute/home/ HTTP/1.1" 200 12582
+WARNING 2023-05-04 16:56:07,392 Not Found: /favicon.ico
+WARNING 2023-05-04 16:56:07,392 "GET /favicon.ico HTTP/1.1" 404 2791
+INFO 2023-05-04 16:56:07,465 "GET /institute/home/ HTTP/1.1" 200 12582
+INFO 2023-05-04 16:59:29,790 "GET /loginandregister/login/ HTTP/1.1" 200 2375
+INFO 2023-05-04 16:59:30,970 "GET /loginandregister/login/ HTTP/1.1" 200 2375
+INFO 2023-05-04 16:59:41,763 "POST /loginandregister/login/validateuser/ HTTP/1.1" 302 0
+INFO 2023-05-04 16:59:42,099 "GET /teacher/home/ HTTP/1.1" 200 21122
+INFO 2023-05-04 16:59:42,157 "GET /static/css/teacher/homepagestyles.css HTTP/1.1" 200 7913
+WARNING 2023-05-04 16:59:42,270 "GET /static/javascript/institute/jquery.js HTTP/1.1" 404 1849
+WARNING 2023-05-04 16:59:42,279 "GET /static/javascript/institute/popper.js HTTP/1.1" 404 1849
+INFO 2023-05-04 16:59:42,566 "GET /teacher/home/ HTTP/1.1" 200 21122
+INFO 2023-05-04 17:01:24,978 "GET /loginandregister/logout/ HTTP/1.1" 302 0
+INFO 2023-05-04 17:01:24,985 "GET /loginandregister/login/ HTTP/1.1" 200 2375
+INFO 2023-05-04 17:01:25,266 "GET /loginandregister/login/ HTTP/1.1" 200 2375
+INFO 2023-05-04 17:01:44,912 "POST /loginandregister/login/validateuser/ HTTP/1.1" 302 0
+INFO 2023-05-04 17:01:45,220 "GET /student/home/ HTTP/1.1" 200 20148
+WARNING 2023-05-04 17:01:45,360 "GET /static/javascript/institute/jquery.js HTTP/1.1" 404 1849
+WARNING 2023-05-04 17:01:45,362 "GET /static/javascript/institute/popper.js HTTP/1.1" 404 1849
+INFO 2023-05-04 17:01:45,552 "GET /student/home/ HTTP/1.1" 200 20148
+INFO 2023-05-04 17:03:54,730 "GET /loginandregister/logout/ HTTP/1.1" 302 0
+INFO 2023-05-04 17:03:54,737 "GET /loginandregister/login/ HTTP/1.1" 200 2375
+INFO 2023-05-04 17:03:55,113 "GET /loginandregister/login/ HTTP/1.1" 200 2375
+INFO 2023-05-04 17:04:09,034 "POST /loginandregister/login/validateuser/ HTTP/1.1" 302 0
+INFO 2023-05-04 17:04:09,180 "GET /teacher/home/ HTTP/1.1" 200 21122
+WARNING 2023-05-04 17:04:09,229 "GET /static/javascript/institute/jquery.js HTTP/1.1" 404 1849
+WARNING 2023-05-04 17:04:09,238 "GET /static/javascript/institute/popper.js HTTP/1.1" 404 1849
+INFO 2023-05-04 17:04:09,562 "GET /teacher/home/ HTTP/1.1" 200 21122
+INFO 2023-05-15 14:41:47,450 Watching for file changes with StatReloader
+INFO 2023-05-15 14:44:50,924 Watching for file changes with StatReloader
+INFO 2023-05-15 14:45:15,132 "GET /loginandregister/login/ HTTP/1.1" 200 2375
+INFO 2023-05-15 14:45:15,232 "GET /static/css/loginandregister/loginstyles.css HTTP/1.1" 200 6490
+INFO 2023-05-15 14:45:15,273 "GET /static/javascript/loginandregister/login.js HTTP/1.1" 200 367
+INFO 2023-05-15 14:45:15,302 "GET /static/images/loginandregister/log.svg HTTP/1.1" 200 34525
+INFO 2023-05-15 14:45:15,344 "GET /static/images/loginandregister/register.svg HTTP/1.1" 200 26911
+INFO 2023-05-15 14:45:16,157 "GET /loginandregister/login/ HTTP/1.1" 200 2375
+WARNING 2023-05-15 14:45:16,388 Not Found: /favicon.ico
+WARNING 2023-05-15 14:45:16,390 "GET /favicon.ico HTTP/1.1" 404 2791
+INFO 2023-05-15 14:45:32,869 "POST /loginandregister/login/validateuser/ HTTP/1.1" 302 0
+INFO 2023-05-15 14:45:33,192 "GET /teacher/home/ HTTP/1.1" 200 21122
+INFO 2023-05-15 14:45:33,276 "GET /static/css/teacher/homepagestyles.css HTTP/1.1" 200 7913
+INFO 2023-05-15 14:45:33,290 "GET /static/css/institute/bootstrap.css HTTP/1.1" 200 155845
+WARNING 2023-05-15 14:45:33,508 "GET /static/javascript/institute/jquery.js HTTP/1.1" 404 1849
+WARNING 2023-05-15 14:45:33,518 "GET /static/javascript/institute/popper.js HTTP/1.1" 404 1849
+INFO 2023-05-15 14:45:33,905 "GET /static/javascript/institute/bootstrap.js HTTP/1.1" 200 60089
+INFO 2023-05-15 14:45:34,308 "GET /teacher/home/ HTTP/1.1" 200 21122
+INFO 2023-05-15 14:49:16,851 "GET /loginandregister/logout/ HTTP/1.1" 302 0
+INFO 2023-05-15 14:49:16,859 "GET /loginandregister/login/ HTTP/1.1" 200 2375
+INFO 2023-05-15 14:49:17,517 "GET /loginandregister/login/ HTTP/1.1" 200 2375
+INFO 2023-05-15 14:49:29,983 "POST /loginandregister/login/validateuser/ HTTP/1.1" 302 0
+INFO 2023-05-15 14:49:30,210 "GET /student/home/ HTTP/1.1" 200 20148
+INFO 2023-05-15 14:49:30,332 "GET /static/css/student/homepagestyles.css HTTP/1.1" 200 7915
+WARNING 2023-05-15 14:49:30,346 "GET /static/javascript/institute/jquery.js HTTP/1.1" 404 1849
+WARNING 2023-05-15 14:49:30,618 "GET /static/javascript/institute/popper.js HTTP/1.1" 404 1849
+INFO 2023-05-15 14:49:30,775 "GET /student/home/ HTTP/1.1" 200 20148
+INFO 2023-05-15 14:51:07,333 "GET /loginandregister/logout/ HTTP/1.1" 302 0
+INFO 2023-05-15 14:51:07,340 "GET /loginandregister/login/ HTTP/1.1" 200 2375
+INFO 2023-05-15 14:51:07,581 "GET /loginandregister/login/ HTTP/1.1" 200 2375
+INFO 2023-05-15 14:51:22,949 "POST /loginandregister/login/validateuser/ HTTP/1.1" 302 0
+INFO 2023-05-15 14:51:23,205 "GET /institute/academic_home/ HTTP/1.1" 200 36224
+WARNING 2023-05-15 14:51:23,237 "GET /static/javascript/institute/jquery.js HTTP/1.1" 404 1849
+INFO 2023-05-15 14:51:23,322 "GET /static/css/institute/styles.css HTTP/1.1" 200 426
+WARNING 2023-05-15 14:51:23,329 "GET /static/javascript/institute/popper.js HTTP/1.1" 404 1849
+INFO 2023-05-15 14:51:23,636 "GET /institute/academic_home/ HTTP/1.1" 200 36224
+INFO 2023-05-15 14:53:26,890 "GET /loginandregister/logout/ HTTP/1.1" 302 0
+INFO 2023-05-15 14:53:26,895 "GET /loginandregister/login/ HTTP/1.1" 200 2375
+INFO 2023-05-15 14:53:27,180 "GET /loginandregister/login/ HTTP/1.1" 200 2375
+INFO 2023-05-15 14:53:45,811 "POST /loginandregister/login/validateuser/ HTTP/1.1" 302 0
+INFO 2023-05-15 14:53:46,005 "GET /institute/account_home/ HTTP/1.1" 200 26896
+WARNING 2023-05-15 14:53:46,049 "GET /static/javascript/institute/jquery.js HTTP/1.1" 404 1849
+WARNING 2023-05-15 14:53:46,049 "GET /static/javascript/institute/popper.js HTTP/1.1" 404 1849
+INFO 2023-05-15 14:53:46,325 "GET /institute/account_home/ HTTP/1.1" 200 26896
+INFO 2023-05-15 14:53:55,585 "GET /loginandregister/logout/ HTTP/1.1" 302 0
+INFO 2023-05-15 14:53:55,591 "GET /loginandregister/login/ HTTP/1.1" 200 2375
+INFO 2023-05-15 14:53:55,634 "GET /loginandregister/login/ HTTP/1.1" 200 2375
+INFO 2023-05-15 14:54:08,363 "POST /loginandregister/login/validateuser/ HTTP/1.1" 302 0
+INFO 2023-05-15 14:54:08,459 "GET /institute/sport_home/ HTTP/1.1" 200 7445
+WARNING 2023-05-15 14:54:08,503 "GET /static/javascript/institute/jquery.js HTTP/1.1" 404 1849
+WARNING 2023-05-15 14:54:08,504 "GET /static/javascript/institute/popper.js HTTP/1.1" 404 1849
+INFO 2023-05-15 14:54:08,781 "GET /institute/sport_home/ HTTP/1.1" 200 7445
+INFO 2023-05-15 14:55:38,762 "GET /loginandregister/logout/ HTTP/1.1" 302 0
+INFO 2023-05-15 14:55:38,768 "GET /loginandregister/login/ HTTP/1.1" 200 2375
+INFO 2023-05-15 14:55:39,015 "GET /loginandregister/login/ HTTP/1.1" 200 2375
+INFO 2023-05-15 14:55:56,659 "POST /loginandregister/login/validateuser/ HTTP/1.1" 302 0
+INFO 2023-05-15 14:55:56,756 "GET /institute/sport_home/ HTTP/1.1" 200 7445
+WARNING 2023-05-15 14:55:56,802 "GET /static/javascript/institute/jquery.js HTTP/1.1" 404 1849
+WARNING 2023-05-15 14:55:56,803 "GET /static/javascript/institute/popper.js HTTP/1.1" 404 1849
+INFO 2023-05-15 14:55:56,974 "GET /institute/sport_home/ HTTP/1.1" 200 7445
+INFO 2023-05-15 14:55:58,791 "GET /loginandregister/logout/ HTTP/1.1" 302 0
+INFO 2023-05-15 14:55:58,797 "GET /loginandregister/login/ HTTP/1.1" 200 2375
+INFO 2023-05-15 14:55:58,844 "GET /loginandregister/login/ HTTP/1.1" 200 2375
+INFO 2023-05-15 14:59:23,350 "POST /loginandregister/login/validateuser/ HTTP/1.1" 302 0
+INFO 2023-05-15 14:59:23,494 "GET /institute/library_home/ HTTP/1.1" 200 19207
+WARNING 2023-05-15 14:59:23,531 "GET /static/javascript/institute/jquery.js HTTP/1.1" 404 1849
+WARNING 2023-05-15 14:59:23,843 "GET /static/javascript/institute/popper.js HTTP/1.1" 404 1849
+INFO 2023-05-15 14:59:23,982 "GET /institute/library_home/ HTTP/1.1" 200 19207
+INFO 2023-05-15 15:00:45,002 "GET /loginandregister/logout/ HTTP/1.1" 302 0
+INFO 2023-05-15 15:00:45,007 "GET /loginandregister/login/ HTTP/1.1" 200 2375
+INFO 2023-05-15 15:00:45,328 "GET /loginandregister/login/ HTTP/1.1" 200 2375
+INFO 2023-05-15 15:00:59,582 "POST /loginandregister/login/validateuser/ HTTP/1.1" 302 0
+INFO 2023-05-15 15:00:59,762 "GET /institute/account_home/ HTTP/1.1" 200 26865
+WARNING 2023-05-15 15:00:59,809 "GET /static/javascript/institute/jquery.js HTTP/1.1" 404 1849
+WARNING 2023-05-15 15:00:59,812 "GET /static/javascript/institute/popper.js HTTP/1.1" 404 1849
+INFO 2023-05-15 15:01:00,075 "GET /institute/account_home/ HTTP/1.1" 200 26865
+INFO 2023-05-15 15:02:38,015 "GET /loginandregister/logout/ HTTP/1.1" 302 0
+INFO 2023-05-15 15:02:38,021 "GET /loginandregister/login/ HTTP/1.1" 200 2375
+INFO 2023-05-15 15:02:38,286 "GET /loginandregister/login/ HTTP/1.1" 200 2375
+INFO 2023-05-15 15:02:47,967 "POST /loginandregister/login/validateuser/ HTTP/1.1" 302 0
+INFO 2023-05-15 15:02:48,201 "GET /institute/admin_home/ HTTP/1.1" 200 40966
+WARNING 2023-05-15 15:02:48,254 "GET /static/javascript/institute/popper.js HTTP/1.1" 404 1849
+WARNING 2023-05-15 15:02:48,255 "GET /static/javascript/institute/jquery.js HTTP/1.1" 404 1849
+INFO 2023-05-15 15:02:48,601 "GET /institute/admin_home/ HTTP/1.1" 200 40966
+INFO 2023-05-15 15:03:57,667 "GET /loginandregister/logout/ HTTP/1.1" 302 0
+INFO 2023-05-15 15:03:57,673 "GET /loginandregister/login/ HTTP/1.1" 200 2375
+INFO 2023-05-15 15:03:57,934 "GET /loginandregister/login/ HTTP/1.1" 200 2375
+INFO 2023-05-15 15:04:15,764 "POST /loginandregister/login/validateuser/ HTTP/1.1" 302 0
+INFO 2023-05-15 15:04:15,955 "GET /institute/admin_home/ HTTP/1.1" 200 40966
+WARNING 2023-05-15 15:04:16,011 "GET /static/javascript/institute/popper.js HTTP/1.1" 404 1849
+WARNING 2023-05-15 15:04:16,011 "GET /static/javascript/institute/jquery.js HTTP/1.1" 404 1849
+INFO 2023-05-15 15:04:16,317 "GET /institute/admin_home/ HTTP/1.1" 200 40966
+INFO 2023-05-15 15:04:18,526 "GET /loginandregister/logout/ HTTP/1.1" 302 0
+INFO 2023-05-15 15:04:18,532 "GET /loginandregister/login/ HTTP/1.1" 200 2375
+INFO 2023-05-15 15:04:18,574 "GET /loginandregister/login/ HTTP/1.1" 200 2375
+INFO 2023-05-15 15:04:26,904 "POST /loginandregister/login/validateuser/ HTTP/1.1" 200 13
+INFO 2023-05-15 15:04:26,953 "GET /loginandregister/login/validateuser/ HTTP/1.1" 302 0
+INFO 2023-05-15 15:04:26,959 "GET /loginandregister/login/ HTTP/1.1" 200 2375
+INFO 2023-05-15 15:04:46,783 "POST /loginandregister/login/validateuser/ HTTP/1.1" 302 0
+INFO 2023-05-15 15:04:46,960 "GET /institute/account_home/ HTTP/1.1" 200 26896
+WARNING 2023-05-15 15:04:47,011 "GET /static/javascript/institute/popper.js HTTP/1.1" 404 1849
+WARNING 2023-05-15 15:04:47,011 "GET /static/javascript/institute/jquery.js HTTP/1.1" 404 1849
+INFO 2023-05-15 15:04:47,259 "GET /institute/account_home/ HTTP/1.1" 200 26896
+INFO 2023-05-15 15:05:30,472 "GET /admin HTTP/1.1" 301 0
+INFO 2023-05-15 15:05:30,621 "GET /admin/ HTTP/1.1" 302 0
+INFO 2023-05-15 15:05:30,911 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2369
+INFO 2023-05-15 15:05:30,981 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2271
+INFO 2023-05-15 15:05:30,983 "GET /static/admin/css/base.css HTTP/1.1" 200 19513
+INFO 2023-05-15 15:05:31,005 "GET /static/admin/css/login.css HTTP/1.1" 200 939
+INFO 2023-05-15 15:05:31,016 "GET /static/admin/css/responsive.css HTTP/1.1" 200 18545
+INFO 2023-05-15 15:05:31,031 "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+INFO 2023-05-15 15:05:31,112 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+INFO 2023-05-15 15:05:31,125 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 1360
+INFO 2023-05-15 15:05:31,131 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+INFO 2023-05-15 15:05:31,157 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+INFO 2023-05-15 15:05:31,300 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2369
+INFO 2023-05-15 15:05:52,085 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2023-05-15 15:05:52,198 "GET /admin/ HTTP/1.1" 200 24636
+INFO 2023-05-15 15:05:52,218 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+INFO 2023-05-15 15:05:52,236 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2023-05-15 15:05:52,237 "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+INFO 2023-05-15 15:05:52,237 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2023-05-15 15:05:52,321 "GET /admin/ HTTP/1.1" 200 24636
+INFO 2023-05-15 15:07:19,083 "GET /admin/logout/ HTTP/1.1" 200 1529
+INFO 2023-05-15 15:07:19,105 "GET /admin/logout/ HTTP/1.1" 302 0
+INFO 2023-05-15 15:07:19,114 "GET /admin/ HTTP/1.1" 302 0
+INFO 2023-05-15 15:07:19,135 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2214
+INFO 2023-05-15 15:07:34,208 "POST /loginandregister/login/validateuser/ HTTP/1.1" 200 13
+INFO 2023-05-15 15:07:34,229 "GET /loginandregister/login/validateuser/ HTTP/1.1" 302 0
+INFO 2023-05-15 15:07:34,234 "GET /loginandregister/login/ HTTP/1.1" 200 2375
+INFO 2023-05-15 15:07:46,977 "POST /loginandregister/login/validateuser/ HTTP/1.1" 302 0
+INFO 2023-05-15 15:07:47,095 "GET /institute/admin_home/ HTTP/1.1" 200 40966
+WARNING 2023-05-15 15:07:47,118 "GET /static/javascript/institute/popper.js HTTP/1.1" 404 1849
+WARNING 2023-05-15 15:07:47,119 "GET /static/javascript/institute/jquery.js HTTP/1.1" 404 1849
+INFO 2023-05-15 15:07:47,326 "GET /institute/admin_home/ HTTP/1.1" 200 40966
+INFO 2023-05-15 15:07:52,837 "GET /loginandregister/logout/ HTTP/1.1" 302 0
+INFO 2023-05-15 15:07:52,844 "GET /loginandregister/login/ HTTP/1.1" 200 2375
+INFO 2023-05-15 15:07:53,131 "GET /loginandregister/login/ HTTP/1.1" 200 2375
+INFO 2023-05-15 15:10:40,132 "POST /loginandregister/login/validateuser/ HTTP/1.1" 302 0
+INFO 2023-05-15 15:10:40,188 "GET /institute/naac_cod_home/ HTTP/1.1" 200 3841
+WARNING 2023-05-15 15:10:40,216 "GET /static/javascript/institute/jquery.js HTTP/1.1" 404 1849
+WARNING 2023-05-15 15:10:40,514 "GET /static/javascript/institute/popper.js HTTP/1.1" 404 1849
+INFO 2023-05-15 15:10:40,583 "GET /institute/naac_cod_home/ HTTP/1.1" 200 3841
+INFO 2023-05-15 15:10:58,472 "GET /institute/criteria_page/ HTTP/1.1" 200 13472
+WARNING 2023-05-15 15:10:58,493 Not Found: /institute/criteria_page/css/styles.css
+WARNING 2023-05-15 15:10:58,493 "GET /institute/criteria_page/css/styles.css HTTP/1.1" 404 13631
+INFO 2023-05-15 15:10:58,529 "GET /institute/criteria_page/ HTTP/1.1" 200 13472
+INFO 2023-05-18 00:26:00,091 Watching for file changes with StatReloader
+INFO 2023-05-18 00:26:50,871 "GET /loginandregister/login HTTP/1.1" 301 0
+INFO 2023-05-18 00:26:51,190 "GET /loginandregister/login/ HTTP/1.1" 200 2375
+INFO 2023-05-18 00:26:51,278 "GET /static/css/loginandregister/loginstyles.css HTTP/1.1" 200 6490
+INFO 2023-05-18 00:26:51,374 "GET /static/javascript/loginandregister/login.js HTTP/1.1" 200 367
+INFO 2023-05-18 00:26:51,408 "GET /static/images/loginandregister/log.svg HTTP/1.1" 200 34525
+INFO 2023-05-18 00:26:51,448 "GET /static/images/loginandregister/register.svg HTTP/1.1" 200 26911
+WARNING 2023-05-18 00:26:52,595 Not Found: /favicon.ico
+WARNING 2023-05-18 00:26:52,595 "GET /favicon.ico HTTP/1.1" 404 2791
+INFO 2023-05-18 00:27:04,590 "POST /loginandregister/login/validateuser/ HTTP/1.1" 302 0
+INFO 2023-05-18 00:27:04,897 "GET /teacher/home/ HTTP/1.1" 200 21122
+INFO 2023-05-18 00:27:05,041 "GET /static/css/teacher/homepagestyles.css HTTP/1.1" 200 7913
+INFO 2023-05-18 00:27:05,041 "GET /static/css/institute/bootstrap.css HTTP/1.1" 200 155845
+WARNING 2023-05-18 00:27:05,113 "GET /static/javascript/institute/jquery.js HTTP/1.1" 404 1849
+WARNING 2023-05-18 00:27:05,121 "GET /static/javascript/institute/popper.js HTTP/1.1" 404 1849
+INFO 2023-05-18 00:27:05,185 "GET /static/javascript/institute/bootstrap.js HTTP/1.1" 200 60089
+ERROR 2023-05-18 00:37:15,911 Internal Server Error: /teacher/home/
+Traceback (most recent call last):
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\teacher\request_views.py", line 42, in displayhome
+    return db_connect_views.displayhome(request)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\teacher\db_connect_views.py", line 276, in displayhome
+    alluser = Alluser.objects.get(user=user)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 424, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1393, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1412, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1320, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1149, in check_related_objects
+    for v in value:
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\utils\functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+ERROR 2023-05-18 00:37:15,936 "GET /teacher/home/ HTTP/1.1" 500 121883
+INFO 2023-05-18 00:37:35,604 "POST /loginandregister/login/validateuser/ HTTP/1.1" 302 0
+INFO 2023-05-18 00:37:35,756 "GET /teacher/home/ HTTP/1.1" 200 21122
+WARNING 2023-05-18 00:37:35,812 "GET /static/javascript/institute/jquery.js HTTP/1.1" 404 1849
+WARNING 2023-05-18 00:37:35,828 "GET /static/javascript/institute/popper.js HTTP/1.1" 404 1849
+INFO 2023-05-18 00:40:52,006 D:\javascript and nodejs tuts\webdev\NaacDataAggregator\teacher\db_connect_views.py changed, reloading.
+INFO 2023-05-18 00:40:53,069 Watching for file changes with StatReloader
+ERROR 2023-05-18 00:40:57,318 Internal Server Error: /teacher/home/
+Traceback (most recent call last):
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\teacher\request_views.py", line 42, in displayhome
+    return db_connect_views.displayhome(request)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\teacher\db_connect_views.py", line 278, in displayhome
+    for key, value in request.session:
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\contrib\sessions\backends\base.py", line 65, in __getitem__
+    return self._session[key]
+KeyError: 0
+ERROR 2023-05-18 00:40:57,334 "GET /teacher/home/ HTTP/1.1" 500 73385
+INFO 2023-05-18 00:42:56,123 D:\javascript and nodejs tuts\webdev\NaacDataAggregator\teacher\db_connect_views.py changed, reloading.
+INFO 2023-05-18 00:42:57,216 Watching for file changes with StatReloader
+INFO 2023-05-18 00:42:59,833 "GET /teacher/home/ HTTP/1.1" 200 21122
+WARNING 2023-05-18 00:42:59,889 "GET /static/javascript/institute/jquery.js HTTP/1.1" 404 1849
+WARNING 2023-05-18 00:42:59,897 "GET /static/javascript/institute/popper.js HTTP/1.1" 404 1849
+INFO 2023-05-18 00:44:00,805 D:\javascript and nodejs tuts\webdev\NaacDataAggregator\teacher\db_connect_views.py changed, reloading.
+INFO 2023-05-18 00:44:02,039 Watching for file changes with StatReloader
+ERROR 2023-05-18 00:44:10,943 Internal Server Error: /teacher/home/
+Traceback (most recent call last):
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\teacher\request_views.py", line 42, in displayhome
+    return db_connect_views.displayhome(request)
+  File "D:\javascript and nodejs tuts\webdev\NaacDataAggregator\teacher\db_connect_views.py", line 278, in displayhome
+    print(request.session['username'])
+  File "C:\Users\aman gupta\AppData\Local\Programs\Python\Python39\lib\site-packages\django\contrib\sessions\backends\base.py", line 65, in __getitem__
+    return self._session[key]
+KeyError: 'username'
+ERROR 2023-05-18 00:44:10,943 "GET /teacher/home/ HTTP/1.1" 500 73491
+INFO 2023-05-18 00:44:33,358 D:\javascript and nodejs tuts\webdev\NaacDataAggregator\teacher\db_connect_views.py changed, reloading.
+INFO 2023-05-18 00:44:34,545 Watching for file changes with StatReloader
+INFO 2023-05-18 00:46:02,652 D:\javascript and nodejs tuts\webdev\NaacDataAggregator\teacher\db_connect_views.py changed, reloading.
+INFO 2023-05-18 00:46:03,709 Watching for file changes with StatReloader
+INFO 2023-05-18 00:46:08,936 "GET /teacher/home/ HTTP/1.1" 200 21122
+WARNING 2023-05-18 00:46:08,999 "GET /static/javascript/institute/jquery.js HTTP/1.1" 404 1849
+WARNING 2023-05-18 00:46:09,006 "GET /static/javascript/institute/popper.js HTTP/1.1" 404 1849

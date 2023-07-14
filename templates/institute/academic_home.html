@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="{% static 'css/student/homepagestyles.css' %}">
+  <link rel="stylesheet" href="{% static 'css/institute/styles.css' %}">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css" rel="stylesheet" />
+  <!-- MDB -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"></script>
+  <link rel="stylesheet" href="{% static 'css/institute/bootstrap.css' %}">
+</head>
+
+<body>
+  <section id="profile-section">
+    <div class="container">
+      <div class="main-body">
+        <div class="row gutters-sm">
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex flex-column align-items-center text-center">
+                  {% if student.gender == 'Male' %}
+                  <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Admin" class="rounded-circle"
+                    width="150">
+                  {% elif student.gender == 'Female' %}
+                  <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="Admin" class="rounded-circle"
+                    width="150">
+                  {% endif %}
+                  <div class="mt-3">
+                    <h4>{{user.first_name}} {{user.last_name}}</h4>
+                    <p class="text-secondary mb-1">{{alluser.user_type}}</p>
+                    <a href="http://localhost:8000/loginandregister/logout/"><button
+                        class="btn btn-primary">Logout</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-8">
+            <div class="card mb-3">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <h6 class="mb-0">Full Name</h6>
+                  </div>
+                  <div class="col-sm-9 text-secondary">
+                    {{user.first_name}} {{user.last_name}}
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <h6 class="mb-0">Email</h6>
+                  </div>
+                  <div class="col-sm-9 text-secondary">
+                    {{user.email}}
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <h6 class="mb-0">Mobile</h6>
+                  </div>
+                  <div class="col-sm-9 text-secondary">
+                    {{alluser.mobile}}
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  {% if criteria_button %}
+                  <div class="col-sm-12">
+                    <a class="btn btn-info " target="__blank" href="{% url 'criteria_page' %}">Criteria Page</a>
+                  </div>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+  {% for dict in dict_list %}
+  <div class="row">
+    <div class="col-sm-12">
+      <h4 class="alert alert-info" style="display: flex; justify-content: space-between;" id="{{dict.table_name}}">
+        {{dict.table_name}}
+        {% if dict.addurl %}
+        <form action="{% url dict.addurl %}" method="post" class="d-inline">
+        {% csrf_token %}
+        <input type="submit" class="btn btn-success" value="Add">
+        </form>
+        {% endif %}
+        {% if dict.bulkaddurl %}
+        <form action="{% url dict.bulkaddurl %}" method="post" class="d-inline" enctype="multipart/form-data">
+        {% csrf_token %}
+          <input type="file" class="upload-box" name="file">
+          <button type="submit" class="btn btn-success">Commit</button>
+        </form>
+        {% endif %}
+      </h4>
+      {% if dict.obj_list %}
+      <div style="max-height: 300px; overflow-y: scroll;">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">S.No</th>
+            {% for hd in dict.alt_heading_list %}
+            <th>{{hd}}</th>
+            {% endfor %}
+            {% if removeaction %}
+            {% else %}
+            <th style="text-align: right; padding-right: 100px;"></th>
+            {% endif %}
+          </tr>
+        </thead>
+        <tbody>
+          {% for obj in dict.obj_list %}
+          <tr>
+            <th scope="row">{{forloop.counter}}</th>
+            {% for key, value in obj.items %}
+            {% if key in dict.heading_list %}
+            <td>{{value}}</td>
+            {% endif %}
+            {% endfor %}
+            <td style="text-align: right;">
+              {% if dict.editurl %}
+              <form action="{% url dict.editurl obj.unique_id %}" method="post" class="d-inline">{% csrf_token %}<button
+                type="submit" class="btn btn-warning btn-sm"><i class="fa-sharp fa-solid fa-pen"></i></button></form>
+              {% endif %}
+              {% if dict.deleteurl %}
+              <form action="{% url dict.deleteurl obj.unique_id %}" method="post" class="d-inline">{% csrf_token %}<button
+                type="submit" class="btn btn-danger btn-sm"><i class="fa-solid fa-trash"></i></button></form>
+              {% endif %}
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      </div>
+      {% else %}
+      <h4 class="text-center alert alert-warning">No records found</h4>
+      {% endif %}
+    </div>
+  </div>
+  <br>
+  {% endfor %}
+  <script src="{% static 'javascript/institute/jquery.js' %}"></script>
+  <script src="{% static 'javascript/institute/popper.js' %}"></script>
+  <script src="{% static 'javascript/institute/bootstrap.js' %}"></script>
+
+</body>
+
+</html>
